@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
+		24D685B22092E33C00A6DB35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685B12092E33C00A6DB35 /* ViewController.swift */; };
+		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
+		24D685B82092E33C00A6DB35 /* Stox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D685B62092E33C00A6DB35 /* Stox.xcdatamodeld */; };
+		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
+		24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */; };
+		24D685C82092E34500A6DB35 /* StoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685C72092E34500A6DB35 /* StoxTests.swift */; };
+		24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685D22092E34500A6DB35 /* StoxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24D685C42092E34500A6DB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D685A42092E33C00A6DB35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D685AB2092E33C00A6DB35;
+			remoteInfo = Stox;
+		};
+		24D685CF2092E34500A6DB35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D685A42092E33C00A6DB35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D685AB2092E33C00A6DB35;
+			remoteInfo = Stox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24D685B12092E33C00A6DB35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24D685B42092E33C00A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24D685B72092E33C00A6DB35 /* Stox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stox.xcdatamodel; sourceTree = "<group>"; };
+		24D685B92092E34400A6DB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24D685BC2092E34400A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D685BE2092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D685C32092E34500A6DB35 /* StoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D685C72092E34500A6DB35 /* StoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoxTests.swift; sourceTree = "<group>"; };
+		24D685C92092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D685CE2092E34500A6DB35 /* StoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D685D22092E34500A6DB35 /* StoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoxUITests.swift; sourceTree = "<group>"; };
+		24D685D42092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D685A92092E33C00A6DB35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D685C02092E34500A6DB35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D685CB2092E34500A6DB35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D685A32092E33C00A6DB35 = {
+			isa = PBXGroup;
+			children = (
+				24D685AE2092E33C00A6DB35 /* Stox */,
+				24D685C62092E34500A6DB35 /* StoxTests */,
+				24D685D12092E34500A6DB35 /* StoxUITests */,
+				24D685AD2092E33C00A6DB35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24D685AD2092E33C00A6DB35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D685AC2092E33C00A6DB35 /* Stox.app */,
+				24D685C32092E34500A6DB35 /* StoxTests.xctest */,
+				24D685CE2092E34500A6DB35 /* StoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D685AE2092E33C00A6DB35 /* Stox */ = {
+			isa = PBXGroup;
+			children = (
+				24D685AF2092E33C00A6DB35 /* AppDelegate.swift */,
+				24D685B12092E33C00A6DB35 /* ViewController.swift */,
+				24D685B32092E33C00A6DB35 /* Main.storyboard */,
+				24D685B92092E34400A6DB35 /* Assets.xcassets */,
+				24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */,
+				24D685BE2092E34500A6DB35 /* Info.plist */,
+				24D685B62092E33C00A6DB35 /* Stox.xcdatamodeld */,
+			);
+			path = Stox;
+			sourceTree = "<group>";
+		};
+		24D685C62092E34500A6DB35 /* StoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				24D685C72092E34500A6DB35 /* StoxTests.swift */,
+				24D685C92092E34500A6DB35 /* Info.plist */,
+			);
+			path = StoxTests;
+			sourceTree = "<group>";
+		};
+		24D685D12092E34500A6DB35 /* StoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24D685D22092E34500A6DB35 /* StoxUITests.swift */,
+				24D685D42092E34500A6DB35 /* Info.plist */,
+			);
+			path = StoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D685AB2092E33C00A6DB35 /* Stox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D685D72092E34500A6DB35 /* Build configuration list for PBXNativeTarget "Stox" */;
+			buildPhases = (
+				24D685A82092E33C00A6DB35 /* Sources */,
+				24D685A92092E33C00A6DB35 /* Frameworks */,
+				24D685AA2092E33C00A6DB35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stox;
+			productName = Stox;
+			productReference = 24D685AC2092E33C00A6DB35 /* Stox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24D685C22092E34500A6DB35 /* StoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D685DA2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxTests" */;
+			buildPhases = (
+				24D685BF2092E34500A6DB35 /* Sources */,
+				24D685C02092E34500A6DB35 /* Frameworks */,
+				24D685C12092E34500A6DB35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D685C52092E34500A6DB35 /* PBXTargetDependency */,
+			);
+			name = StoxTests;
+			productName = StoxTests;
+			productReference = 24D685C32092E34500A6DB35 /* StoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24D685CD2092E34500A6DB35 /* StoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D685DD2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxUITests" */;
+			buildPhases = (
+				24D685CA2092E34500A6DB35 /* Sources */,
+				24D685CB2092E34500A6DB35 /* Frameworks */,
+				24D685CC2092E34500A6DB35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D685D02092E34500A6DB35 /* PBXTargetDependency */,
+			);
+			name = StoxUITests;
+			productName = StoxUITests;
+			productReference = 24D685CE2092E34500A6DB35 /* StoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D685A42092E33C00A6DB35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Lithogen;
+				TargetAttributes = {
+					24D685AB2092E33C00A6DB35 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					24D685C22092E34500A6DB35 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 24D685AB2092E33C00A6DB35;
+					};
+					24D685CD2092E34500A6DB35 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 24D685AB2092E33C00A6DB35;
+					};
+				};
+			};
+			buildConfigurationList = 24D685A72092E33C00A6DB35 /* Build configuration list for PBXProject "Stox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24D685A32092E33C00A6DB35;
+			productRefGroup = 24D685AD2092E33C00A6DB35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D685AB2092E33C00A6DB35 /* Stox */,
+				24D685C22092E34500A6DB35 /* StoxTests */,
+				24D685CD2092E34500A6DB35 /* StoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D685AA2092E33C00A6DB35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */,
+				24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */,
+				24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D685C12092E34500A6DB35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D685CC2092E34500A6DB35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D685A82092E33C00A6DB35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D685B22092E33C00A6DB35 /* ViewController.swift in Sources */,
+				24D685B82092E33C00A6DB35 /* Stox.xcdatamodeld in Sources */,
+				24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D685BF2092E34500A6DB35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D685C82092E34500A6DB35 /* StoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D685CA2092E34500A6DB35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D685C52092E34500A6DB35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D685AB2092E33C00A6DB35 /* Stox */;
+			targetProxy = 24D685C42092E34500A6DB35 /* PBXContainerItemProxy */;
+		};
+		24D685D02092E34500A6DB35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D685AB2092E33C00A6DB35 /* Stox */;
+			targetProxy = 24D685CF2092E34500A6DB35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24D685B32092E33C00A6DB35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D685B42092E33C00A6DB35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D685BC2092E34400A6DB35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24D685D52092E34500A6DB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24D685D62092E34500A6DB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D685D82092E34500A6DB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4588H2WW4;
+				INFOPLIST_FILE = Stox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.Stox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24D685D92092E34500A6DB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4588H2WW4;
+				INFOPLIST_FILE = Stox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.Stox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24D685DB2092E34500A6DB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4588H2WW4;
+				INFOPLIST_FILE = StoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.StoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stox.app/Stox";
+			};
+			name = Debug;
+		};
+		24D685DC2092E34500A6DB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4588H2WW4;
+				INFOPLIST_FILE = StoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.StoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stox.app/Stox";
+			};
+			name = Release;
+		};
+		24D685DE2092E34500A6DB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4588H2WW4;
+				INFOPLIST_FILE = StoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.StoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stox;
+			};
+			name = Debug;
+		};
+		24D685DF2092E34500A6DB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4588H2WW4;
+				INFOPLIST_FILE = StoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.StoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D685A72092E33C00A6DB35 /* Build configuration list for PBXProject "Stox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D685D52092E34500A6DB35 /* Debug */,
+				24D685D62092E34500A6DB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D685D72092E34500A6DB35 /* Build configuration list for PBXNativeTarget "Stox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D685D82092E34500A6DB35 /* Debug */,
+				24D685D92092E34500A6DB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D685DA2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D685DB2092E34500A6DB35 /* Debug */,
+				24D685DC2092E34500A6DB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D685DD2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D685DE2092E34500A6DB35 /* Debug */,
+				24D685DF2092E34500A6DB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24D685B62092E33C00A6DB35 /* Stox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24D685B72092E33C00A6DB35 /* Stox.xcdatamodel */,
+			);
+			currentVersion = 24D685B72092E33C00A6DB35 /* Stox.xcdatamodel */;
+			path = Stox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24D685A42092E33C00A6DB35 /* Project object */;
+}

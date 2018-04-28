@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B22092E33C00A6DB35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685B12092E33C00A6DB35 /* ViewController.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */; };
 		24D685C82092E34500A6DB35 /* StoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685C72092E34500A6DB35 /* StoxTests.swift */; };
 		24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685D22092E34500A6DB35 /* StoxUITests.swift */; };
+		33B8B2C4EFEBD7552686A869 /* Pods_Stox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D72968C1C4713B3A28F11 /* Pods_Stox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		242AEF7520941DA200A45E21 /* StockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuote.swift; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D685B12092E33C00A6DB35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		24D685CE2092E34500A6DB35 /* StoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685D22092E34500A6DB35 /* StoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoxUITests.swift; sourceTree = "<group>"; };
 		24D685D42092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72C913DEB2664BD7CF3D52B0 /* Pods-Stox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.release.xcconfig"; sourceTree = "<group>"; };
+		A71A7F09CB0BA70B28F955EA /* Pods-Stox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.debug.xcconfig"; sourceTree = "<group>"; };
+		B17D72968C1C4713B3A28F11 /* Pods_Stox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B8B2C4EFEBD7552686A869 /* Pods_Stox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24180CE22094418300116188 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				242AEF7520941DA200A45E21 /* StockQuote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		24D685A32092E33C00A6DB35 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,8 @@
 				24D685C62092E34500A6DB35 /* StoxTests */,
 				24D685D12092E34500A6DB35 /* StoxUITests */,
 				24D685AD2092E33C00A6DB35 /* Products */,
+				9BA80F8E3ECB406AD1FF68EF /* Pods */,
+				EE6246EA2D152AEF9FA41694 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +116,7 @@
 		24D685AE2092E33C00A6DB35 /* Stox */ = {
 			isa = PBXGroup;
 			children = (
+				24180CE22094418300116188 /* Model */,
 				24D685AF2092E33C00A6DB35 /* AppDelegate.swift */,
 				24D685B12092E33C00A6DB35 /* ViewController.swift */,
 				24D685B32092E33C00A6DB35 /* Main.storyboard */,
@@ -128,6 +146,23 @@
 			path = StoxUITests;
 			sourceTree = "<group>";
 		};
+		9BA80F8E3ECB406AD1FF68EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A71A7F09CB0BA70B28F955EA /* Pods-Stox.debug.xcconfig */,
+				72C913DEB2664BD7CF3D52B0 /* Pods-Stox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE6246EA2D152AEF9FA41694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B17D72968C1C4713B3A28F11 /* Pods_Stox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24D685D72092E34500A6DB35 /* Build configuration list for PBXNativeTarget "Stox" */;
 			buildPhases = (
+				5DCDC64FE00EB7C6E6766AAC /* [CP] Check Pods Manifest.lock */,
 				24D685A82092E33C00A6DB35 /* Sources */,
 				24D685A92092E33C00A6DB35 /* Frameworks */,
 				24D685AA2092E33C00A6DB35 /* Resources */,
+				E628B9038228E1AFCC81F53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +291,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DCDC64FE00EB7C6E6766AAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E628B9038228E1AFCC81F53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stox/Pods-Stox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stox/Pods-Stox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24D685A82092E33C00A6DB35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				24D685B22092E33C00A6DB35 /* ViewController.swift in Sources */,
+				242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */,
 				24D685B82092E33C00A6DB35 /* Stox.xcdatamodeld in Sources */,
 				24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +521,7 @@
 		};
 		24D685D82092E34500A6DB35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A71A7F09CB0BA70B28F955EA /* Pods-Stox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +540,7 @@
 		};
 		24D685D92092E34500A6DB35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C913DEB2664BD7CF3D52B0 /* Pods-Stox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -27,7 +27,7 @@ class StockCell: UITableViewCell {
     }()
     
     let companyImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "select_photo_empty").withRenderingMode(.alwaysOriginal))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "select_photo_empty"))
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true

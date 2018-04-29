@@ -10,13 +10,9 @@
 		16C8E3C55330C8F4A14FD0AB /* Pods_StoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F819C098AE80992054733C /* Pods_StoxUITests.framework */; };
 		24180CE52095577E00116188 /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE42095577E00116188 /* StockController.swift */; };
 		24180CE72095591400116188 /* UIColor+customTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE62095591400116188 /* UIColor+customTheme.swift */; };
-		24180CE820955CE900116188 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
-		24180CEA20955D9900116188 /* UIColor+customTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE62095591400116188 /* UIColor+customTheme.swift */; };
 		24180CEC20955E8F00116188 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CEB20955E8F00116188 /* DetailController.swift */; };
-		24180CED20955E8F00116188 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CEB20955E8F00116188 /* DetailController.swift */; };
 		24180CEE20955E8F00116188 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CEB20955E8F00116188 /* DetailController.swift */; };
 		24180CF520957F2600116188 /* StockQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CF420957F2600116188 /* StockQuotes.swift */; };
-		24180CF620957F2600116188 /* StockQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CF420957F2600116188 /* StockQuotes.swift */; };
 		24180CF720957F2600116188 /* StockQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CF420957F2600116188 /* StockQuotes.swift */; };
 		24180CFF2095826900116188 /* Stox_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CFE2095826900116188 /* Stox_Unit_Tests.swift */; };
 		24180D0B2095903800116188 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D0A2095903800116188 /* StockCell.swift */; };
@@ -24,8 +20,9 @@
 		24180D0D2095903800116188 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D0A2095903800116188 /* StockCell.swift */; };
 		24180D1A20959FCF00116188 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		24180D1E2095A0F100116188 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24180D1D2095A0F100116188 /* SnapKit.framework */; };
-		24180D202095A0F700116188 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24180D1F2095A0F700116188 /* SnapKit.framework */; };
 		24180D212096153900116188 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
+		24180D222096163700116188 /* UIColor+customTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE62095591400116188 /* UIColor+customTheme.swift */; };
+		24180D232096163800116188 /* UIColor+customTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE62095591400116188 /* UIColor+customTheme.swift */; };
 		242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
@@ -33,19 +30,14 @@
 		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
 		24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */; };
 		24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685D22092E34500A6DB35 /* StoxUITests.swift */; };
+		331E3912C5D737EA70FF67C6 /* Pods_Stocks_Stox_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7C76BA01F5DC2EA6A2CF1D /* Pods_Stocks_Stox_Unit_Tests.framework */; };
 		5C6744E4CA3A6BC2EFFBC051 /* Pods_Stox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6169DE54E30B71B97E0596DC /* Pods_Stox.framework */; };
-		E23E0FA76C346C7639D80BD3 /* Pods_Stox_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E41DA57FE7AB47836A9CC4 /* Pods_Stox_Unit_Tests.framework */; };
+		8F84B6C0EC6B2F1235289D5E /* Pods_Stocks_Stox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124ADDA91E7A2C3A7A28FC21 /* Pods_Stocks_Stox.framework */; };
+		C7004BD15ECB7E7464DB6887 /* Pods_Stocks_StoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A4307CC9AE6E7B036C3469 /* Pods_Stocks_StoxUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		24180D012095826900116188 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24D685A42092E33C00A6DB35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24D685AB2092E33C00A6DB35;
-			remoteInfo = Stox;
-		};
-		24D685C42092E34500A6DB35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24D685A42092E33C00A6DB35 /* Project object */;
 			proxyType = 1;
@@ -62,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		124ADDA91E7A2C3A7A28FC21 /* Pods_Stocks_Stox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks_Stox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E41DA57FE7AB47836A9CC4 /* Pods_Stox_Unit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stox_Unit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24180CE42095577E00116188 /* StockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockController.swift; sourceTree = "<group>"; };
 		24180CE62095591400116188 /* UIColor+customTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+customTheme.swift"; sourceTree = "<group>"; };
@@ -82,16 +75,23 @@
 		24D685B92092E34400A6DB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D685BC2092E34400A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D685BE2092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24D685C32092E34500A6DB35 /* StoxUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoxUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685CE2092E34500A6DB35 /* StoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685D22092E34500A6DB35 /* StoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoxUITests.swift; sourceTree = "<group>"; };
 		24D685D42092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F94AD7918043B2CDC88E8A2 /* Pods-Stocks-StoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks-StoxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stocks-StoxUITests/Pods-Stocks-StoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42D18BAD858529DC68FE5118 /* Pods-Stox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.release.xcconfig"; sourceTree = "<group>"; };
+		44A4307CC9AE6E7B036C3469 /* Pods_Stocks_StoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks_StoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477F898F8EBF0F1ACA04371C /* Pods-Stocks-Stox_Unit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks-Stox_Unit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stocks-Stox_Unit_Tests/Pods-Stocks-Stox_Unit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		59169A3C3D7331AF8A9F517D /* Pods-Stocks-Stox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks-Stox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stocks-Stox/Pods-Stocks-Stox.release.xcconfig"; sourceTree = "<group>"; };
 		6169DE54E30B71B97E0596DC /* Pods_Stox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B448440821F3DAE57F8F653 /* Pods-Stocks-Stox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks-Stox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stocks-Stox/Pods-Stocks-Stox.debug.xcconfig"; sourceTree = "<group>"; };
 		86F819C098AE80992054733C /* Pods_StoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A087A5ECB8BEC031D17AFEDE /* Pods-Stox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.debug.xcconfig"; sourceTree = "<group>"; };
 		AEBFD8A4D6730109BEDAA390 /* Pods-StoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoxUITests/Pods-StoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B466AC33D57019B614390570 /* Pods-Stocks-StoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks-StoxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stocks-StoxUITests/Pods-Stocks-StoxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9066D5CE750233BF07BFF94 /* Pods-Stocks-Stox_Unit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks-Stox_Unit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stocks-Stox_Unit_Tests/Pods-Stocks-Stox_Unit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0C8082ADA83132E3D54A8C /* Pods-Stox_Unit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox_Unit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stox_Unit_Tests/Pods-Stox_Unit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA7C76BA01F5DC2EA6A2CF1D /* Pods_Stocks_Stox_Unit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks_Stox_Unit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DFFA110471D92FEF133F0E /* Pods-Stox_Unit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox_Unit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stox_Unit_Tests/Pods-Stox_Unit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F87B6D481FBB25EAAACFD284 /* Pods-StoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoxUITests/Pods-StoxUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,8 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24180D202095A0F700116188 /* SnapKit.framework in Frameworks */,
-				E23E0FA76C346C7639D80BD3 /* Pods_Stox_Unit_Tests.framework in Frameworks */,
+				331E3912C5D737EA70FF67C6 /* Pods_Stocks_Stox_Unit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,13 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C6744E4CA3A6BC2EFFBC051 /* Pods_Stox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24D685C02092E34500A6DB35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8F84B6C0EC6B2F1235289D5E /* Pods_Stocks_Stox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +120,7 @@
 			files = (
 				24180D1E2095A0F100116188 /* SnapKit.framework in Frameworks */,
 				16C8E3C55330C8F4A14FD0AB /* Pods_StoxUITests.framework in Frameworks */,
+				C7004BD15ECB7E7464DB6887 /* Pods_Stocks_StoxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				24D685AC2092E33C00A6DB35 /* Stox.app */,
-				24D685C32092E34500A6DB35 /* StoxUnitTests.xctest */,
 				24D685CE2092E34500A6DB35 /* StoxUITests.xctest */,
 				24180CFC2095826900116188 /* Stox_Unit_Tests.xctest */,
 			);
@@ -242,6 +235,12 @@
 				F87B6D481FBB25EAAACFD284 /* Pods-StoxUITests.release.xcconfig */,
 				CD0C8082ADA83132E3D54A8C /* Pods-Stox_Unit_Tests.debug.xcconfig */,
 				F3DFFA110471D92FEF133F0E /* Pods-Stox_Unit_Tests.release.xcconfig */,
+				6B448440821F3DAE57F8F653 /* Pods-Stocks-Stox.debug.xcconfig */,
+				59169A3C3D7331AF8A9F517D /* Pods-Stocks-Stox.release.xcconfig */,
+				2F94AD7918043B2CDC88E8A2 /* Pods-Stocks-StoxUITests.debug.xcconfig */,
+				B466AC33D57019B614390570 /* Pods-Stocks-StoxUITests.release.xcconfig */,
+				C9066D5CE750233BF07BFF94 /* Pods-Stocks-Stox_Unit_Tests.debug.xcconfig */,
+				477F898F8EBF0F1ACA04371C /* Pods-Stocks-Stox_Unit_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -255,6 +254,9 @@
 				6169DE54E30B71B97E0596DC /* Pods_Stox.framework */,
 				86F819C098AE80992054733C /* Pods_StoxUITests.framework */,
 				13E41DA57FE7AB47836A9CC4 /* Pods_Stox_Unit_Tests.framework */,
+				124ADDA91E7A2C3A7A28FC21 /* Pods_Stocks_Stox.framework */,
+				44A4307CC9AE6E7B036C3469 /* Pods_Stocks_StoxUITests.framework */,
+				DA7C76BA01F5DC2EA6A2CF1D /* Pods_Stocks_Stox_Unit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +272,7 @@
 				24180CF82095826900116188 /* Sources */,
 				24180CF92095826900116188 /* Frameworks */,
 				24180CFA2095826900116188 /* Resources */,
+				4E8361B09272F1730D9C59C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,24 +303,6 @@
 			productReference = 24D685AC2092E33C00A6DB35 /* Stox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24D685C22092E34500A6DB35 /* StoxUnitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24D685DA2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxUnitTests" */;
-			buildPhases = (
-				24D685BF2092E34500A6DB35 /* Sources */,
-				24D685C02092E34500A6DB35 /* Frameworks */,
-				24D685C12092E34500A6DB35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24D685C52092E34500A6DB35 /* PBXTargetDependency */,
-			);
-			name = StoxUnitTests;
-			productName = StoxTests;
-			productReference = 24D685C32092E34500A6DB35 /* StoxUnitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		24D685CD2092E34500A6DB35 /* StoxUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24D685DD2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxUITests" */;
@@ -326,6 +311,7 @@
 				24D685CA2092E34500A6DB35 /* Sources */,
 				24D685CB2092E34500A6DB35 /* Frameworks */,
 				24D685CC2092E34500A6DB35 /* Resources */,
+				1889D78C7FEC22388D1510F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,10 +340,6 @@
 					24D685AB2092E33C00A6DB35 = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					24D685C22092E34500A6DB35 = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 24D685AB2092E33C00A6DB35;
-					};
 					24D685CD2092E34500A6DB35 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 24D685AB2092E33C00A6DB35;
@@ -378,7 +360,6 @@
 			projectRoot = "";
 			targets = (
 				24D685AB2092E33C00A6DB35 /* Stox */,
-				24D685C22092E34500A6DB35 /* StoxUnitTests */,
 				24D685CD2092E34500A6DB35 /* StoxUITests */,
 				24180CFB2095826900116188 /* Stox_Unit_Tests */,
 			);
@@ -403,13 +384,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24D685C12092E34500A6DB35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		24D685CC2092E34500A6DB35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,15 +394,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4EE04E095202267B094E931F /* [CP] Embed Pods Frameworks */ = {
+		1889D78C7FEC22388D1510F1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Stox/Pods-Stox-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-StoxUITests/Pods-Stocks-StoxUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
@@ -439,6 +414,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
@@ -447,7 +423,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stox/Pods-Stox-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-StoxUITests/Pods-Stocks-StoxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8361B09272F1730D9C59C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-Stox_Unit_Tests/Pods-Stocks-Stox_Unit_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-Stox_Unit_Tests/Pods-Stocks-Stox_Unit_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE04E095202267B094E931F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-Stox/Pods-Stocks-Stox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-Stox/Pods-Stocks-Stox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6D02E2B9F4690BCD5260680A /* [CP] Check Pods Manifest.lock */ = {
@@ -461,7 +501,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stox-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Stocks-Stox-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -479,7 +519,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stox_Unit_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Stocks-Stox_Unit_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,7 +537,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StoxUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Stocks-StoxUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,6 +553,7 @@
 			files = (
 				24180D0D2095903800116188 /* StockCell.swift in Sources */,
 				24180CFF2095826900116188 /* Stox_Unit_Tests.swift in Sources */,
+				24180D222096163700116188 /* UIColor+customTheme.swift in Sources */,
 				24180D212096153900116188 /* StockQuote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,21 +573,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24D685BF2092E34500A6DB35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24180CEA20955D9900116188 /* UIColor+customTheme.swift in Sources */,
-				24180CF620957F2600116188 /* StockQuotes.swift in Sources */,
-				24180CED20955E8F00116188 /* DetailController.swift in Sources */,
-				24180CE820955CE900116188 /* StockQuote.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		24D685CA2092E34500A6DB35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24180D232096163800116188 /* UIColor+customTheme.swift in Sources */,
 				24180D1A20959FCF00116188 /* StockQuote.swift in Sources */,
 				24180CF720957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEE20955E8F00116188 /* DetailController.swift in Sources */,
@@ -562,11 +593,6 @@
 			isa = PBXTargetDependency;
 			target = 24D685AB2092E33C00A6DB35 /* Stox */;
 			targetProxy = 24180D012095826900116188 /* PBXContainerItemProxy */;
-		};
-		24D685C52092E34500A6DB35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24D685AB2092E33C00A6DB35 /* Stox */;
-			targetProxy = 24D685C42092E34500A6DB35 /* PBXContainerItemProxy */;
 		};
 		24D685D02092E34500A6DB35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -597,8 +623,9 @@
 /* Begin XCBuildConfiguration section */
 		24180D042095826900116188 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD0C8082ADA83132E3D54A8C /* Pods-Stox_Unit_Tests.debug.xcconfig */;
+			baseConfigurationReference = C9066D5CE750233BF07BFF94 /* Pods-Stocks-Stox_Unit_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4588H2WW4;
@@ -618,8 +645,9 @@
 		};
 		24180D052095826900116188 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3DFFA110471D92FEF133F0E /* Pods-Stox_Unit_Tests.release.xcconfig */;
+			baseConfigurationReference = 477F898F8EBF0F1ACA04371C /* Pods-Stocks-Stox_Unit_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4588H2WW4;
@@ -753,7 +781,7 @@
 		};
 		24D685D82092E34500A6DB35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A087A5ECB8BEC031D17AFEDE /* Pods-Stox.debug.xcconfig */;
+			baseConfigurationReference = 6B448440821F3DAE57F8F653 /* Pods-Stocks-Stox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -772,7 +800,7 @@
 		};
 		24D685D92092E34500A6DB35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42D18BAD858529DC68FE5118 /* Pods-Stox.release.xcconfig */;
+			baseConfigurationReference = 59169A3C3D7331AF8A9F517D /* Pods-Stocks-Stox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -789,53 +817,11 @@
 			};
 			name = Release;
 		};
-		24D685DB2092E34500A6DB35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C4588H2WW4;
-				INFOPLIST_FILE = StoxTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.StoxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stox.app/Stox";
-			};
-			name = Debug;
-		};
-		24D685DC2092E34500A6DB35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C4588H2WW4;
-				INFOPLIST_FILE = StoxTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lithogen.StoxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stox.app/Stox";
-			};
-			name = Release;
-		};
 		24D685DE2092E34500A6DB35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEBFD8A4D6730109BEDAA390 /* Pods-StoxUITests.debug.xcconfig */;
+			baseConfigurationReference = 2F94AD7918043B2CDC88E8A2 /* Pods-Stocks-StoxUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4588H2WW4;
 				INFOPLIST_FILE = StoxUITests/Info.plist;
@@ -854,9 +840,9 @@
 		};
 		24D685DF2092E34500A6DB35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F87B6D481FBB25EAAACFD284 /* Pods-StoxUITests.release.xcconfig */;
+			baseConfigurationReference = B466AC33D57019B614390570 /* Pods-Stocks-StoxUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4588H2WW4;
 				INFOPLIST_FILE = StoxUITests/Info.plist;
@@ -899,15 +885,6 @@
 			buildConfigurations = (
 				24D685D82092E34500A6DB35 /* Debug */,
 				24D685D92092E34500A6DB35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24D685DA2092E34500A6DB35 /* Build configuration list for PBXNativeTarget "StoxUnitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24D685DB2092E34500A6DB35 /* Debug */,
-				24D685DC2092E34500A6DB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

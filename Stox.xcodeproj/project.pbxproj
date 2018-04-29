@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24180CE52095577E00116188 /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE42095577E00116188 /* StockController.swift */; };
+		24180CE72095591400116188 /* UIColor+customTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CE62095591400116188 /* UIColor+customTheme.swift */; };
+		24180CE820955CE900116188 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
-		24D685B22092E33C00A6DB35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685B12092E33C00A6DB35 /* ViewController.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
 		24D685B82092E33C00A6DB35 /* Stox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D685B62092E33C00A6DB35 /* Stox.xcdatamodeld */; };
 		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
@@ -37,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24180CE42095577E00116188 /* StockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockController.swift; sourceTree = "<group>"; };
+		24180CE62095591400116188 /* UIColor+customTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+customTheme.swift"; sourceTree = "<group>"; };
 		242AEF7520941DA200A45E21 /* StockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuote.swift; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24D685B12092E33C00A6DB35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24D685B42092E33C00A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D685B72092E33C00A6DB35 /* Stox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stox.xcdatamodel; sourceTree = "<group>"; };
 		24D685B92092E34400A6DB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +94,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		24180CE32095550100116188 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				24180CE62095591400116188 /* UIColor+customTheme.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		24D685A32092E33C00A6DB35 = {
 			isa = PBXGroup;
 			children = (
@@ -116,9 +127,10 @@
 		24D685AE2092E33C00A6DB35 /* Stox */ = {
 			isa = PBXGroup;
 			children = (
+				24180CE32095550100116188 /* Utility */,
 				24180CE22094418300116188 /* Model */,
 				24D685AF2092E33C00A6DB35 /* AppDelegate.swift */,
-				24D685B12092E33C00A6DB35 /* ViewController.swift */,
+				24180CE42095577E00116188 /* StockController.swift */,
 				24D685B32092E33C00A6DB35 /* Main.storyboard */,
 				24D685B92092E34400A6DB35 /* Assets.xcassets */,
 				24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */,
@@ -347,8 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D685B22092E33C00A6DB35 /* ViewController.swift in Sources */,
 				242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */,
+				24180CE52095577E00116188 /* StockController.swift in Sources */,
+				24180CE72095591400116188 /* UIColor+customTheme.swift in Sources */,
 				24D685B82092E33C00A6DB35 /* Stox.xcdatamodeld in Sources */,
 				24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */,
 			);
@@ -359,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D685C82092E34500A6DB35 /* StoxTests.swift in Sources */,
+				24180CE820955CE900116188 /* StockQuote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

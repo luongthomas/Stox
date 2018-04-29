@@ -8,7 +8,7 @@ abstract_target 'Stocks' do
     pod 'Texture'
     pod 'Alamofire'
     pod 'Charts'
-    pod 'OHHTTPStubs/Swift'
+    pod 'Mockingjay'
 
     target 'Stox'
     target 'Stox_Unit_Tests'

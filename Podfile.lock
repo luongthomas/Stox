@@ -3,19 +3,13 @@ PODS:
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
-  - OHHTTPStubs/Core (6.1.0)
-  - OHHTTPStubs/Default (6.1.0):
-    - OHHTTPStubs/Core
-    - OHHTTPStubs/JSON
-    - OHHTTPStubs/NSURLSession
-    - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (6.1.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (6.1.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (6.1.0)
-  - OHHTTPStubs/Swift (6.1.0):
-    - OHHTTPStubs/Default
+  - Mockingjay (2.0.1):
+    - Mockingjay/Core (= 2.0.1)
+    - Mockingjay/XCTest (= 2.0.1)
+  - Mockingjay/Core (2.0.1):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.1):
+    - Mockingjay/Core
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -39,11 +33,12 @@ PODS:
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
+  - URITemplate (2.0.3)
 
 DEPENDENCIES:
   - Alamofire
   - Charts
-  - OHHTTPStubs/Swift
+  - Mockingjay
   - SnapKit (~> 4.0.0)
   - Texture
 
@@ -51,23 +46,25 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Charts
-    - OHHTTPStubs
+    - Mockingjay
     - PINCache
     - PINOperation
     - PINRemoteImage
     - SnapKit
     - Texture
+    - URITemplate
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
-  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
 
-PODFILE CHECKSUM: d31bc340e502692874c569ef6cf6dc7bdfcc4748
+PODFILE CHECKSUM: 813f4495b8c1ef944a10a1c07575161fba5b22b0
 
 COCOAPODS: 1.5.0

@@ -63,6 +63,6 @@ class StoxUITests: XCTestCase {
     }
     
     func testEmptyStart() {
-        XCTAssert(app.tableRows.count == 0, "Initialized a company at start incorrectly")
+        XCTAssert(app.tableRows.count == 0, "Initialized stocks at start incorrectly")
     }
 }

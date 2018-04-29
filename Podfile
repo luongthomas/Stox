@@ -8,10 +8,14 @@ abstract_target 'Stocks' do
     pod 'Texture'
     pod 'Alamofire'
     pod 'Charts'
-    pod 'Mockingjay'
-
+    
     target 'Stox'
-    target 'Stox_Unit_Tests'
-    target 'StoxUITests'
+    target 'Stox_Unit_Tests' do 
+    	pod 'Mockingjay'
+    end
+
+    target 'StoxUITests' do 
+    	pod 'Mockingjay'
+    end
 
 end

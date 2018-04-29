@@ -77,4 +77,11 @@ class StoxTests: XCTestCase {
         }
     }
     
+    func testAddingSampleStockQuotes() {
+        let stockController = StockController()
+        stockController.addSampleStockQuotes()
+        let count = stockController.stockQuotes.count
+        
+        XCTAssert(count == 3, "Adding sample stocks to stocksQuotes did not increase count")
+    }
 }

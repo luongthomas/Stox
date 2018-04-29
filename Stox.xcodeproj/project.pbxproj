@@ -14,6 +14,11 @@
 		24180CEC20955E8F00116188 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CEB20955E8F00116188 /* DetailController.swift */; };
 		24180CED20955E8F00116188 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CEB20955E8F00116188 /* DetailController.swift */; };
 		24180CEE20955E8F00116188 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CEB20955E8F00116188 /* DetailController.swift */; };
+		24180CF020956ED400116188 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24180CEF20956ED400116188 /* SnapKit.framework */; };
+		24180CF120956F4000116188 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24180CEF20956ED400116188 /* SnapKit.framework */; };
+		24180CF520957F2600116188 /* StockQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CF420957F2600116188 /* StockQuotes.swift */; };
+		24180CF620957F2600116188 /* StockQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CF420957F2600116188 /* StockQuotes.swift */; };
+		24180CF720957F2600116188 /* StockQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180CF420957F2600116188 /* StockQuotes.swift */; };
 		242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
@@ -22,7 +27,7 @@
 		24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */; };
 		24D685C82092E34500A6DB35 /* StoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685C72092E34500A6DB35 /* StoxTests.swift */; };
 		24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685D22092E34500A6DB35 /* StoxUITests.swift */; };
-		33B8B2C4EFEBD7552686A869 /* Pods_Stox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D72968C1C4713B3A28F11 /* Pods_Stox.framework */; };
+		C6202626F78C2B3897B0F54D /* Pods_Stox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D389A421D3584F25B2F02EC1 /* Pods_Stox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,8 @@
 		24180CE42095577E00116188 /* StockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockController.swift; sourceTree = "<group>"; };
 		24180CE62095591400116188 /* UIColor+customTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+customTheme.swift"; sourceTree = "<group>"; };
 		24180CEB20955E8F00116188 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		24180CEF20956ED400116188 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24180CF420957F2600116188 /* StockQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuotes.swift; sourceTree = "<group>"; };
 		242AEF7520941DA200A45E21 /* StockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuote.swift; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +67,9 @@
 		24D685CE2092E34500A6DB35 /* StoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685D22092E34500A6DB35 /* StoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoxUITests.swift; sourceTree = "<group>"; };
 		24D685D42092E34500A6DB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72C913DEB2664BD7CF3D52B0 /* Pods-Stox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.release.xcconfig"; sourceTree = "<group>"; };
-		A71A7F09CB0BA70B28F955EA /* Pods-Stox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.debug.xcconfig"; sourceTree = "<group>"; };
-		B17D72968C1C4713B3A28F11 /* Pods_Stox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D18BAD858529DC68FE5118 /* Pods-Stox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.release.xcconfig"; sourceTree = "<group>"; };
+		A087A5ECB8BEC031D17AFEDE /* Pods-Stox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stox/Pods-Stox.debug.xcconfig"; sourceTree = "<group>"; };
+		D389A421D3584F25B2F02EC1 /* Pods_Stox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33B8B2C4EFEBD7552686A869 /* Pods_Stox.framework in Frameworks */,
+				24180CF120956F4000116188 /* SnapKit.framework in Frameworks */,
+				C6202626F78C2B3897B0F54D /* Pods_Stox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24180CF020956ED400116188 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				242AEF7520941DA200A45E21 /* StockQuote.swift */,
+				24180CF420957F2600116188 /* StockQuotes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +117,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		24180CF32095703400116188 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24180CE42095577E00116188 /* StockController.swift */,
+				24180CEB20955E8F00116188 /* DetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		24D685A32092E33C00A6DB35 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +133,8 @@
 				24D685C62092E34500A6DB35 /* StoxTests */,
 				24D685D12092E34500A6DB35 /* StoxUITests */,
 				24D685AD2092E33C00A6DB35 /* Products */,
-				9BA80F8E3ECB406AD1FF68EF /* Pods */,
 				EE6246EA2D152AEF9FA41694 /* Frameworks */,
+				B4FC01A4BA85AC777916D913 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,16 +151,15 @@
 		24D685AE2092E33C00A6DB35 /* Stox */ = {
 			isa = PBXGroup;
 			children = (
+				24180CF32095703400116188 /* Controller */,
 				24180CE32095550100116188 /* Utility */,
 				24180CE22094418300116188 /* Model */,
 				24D685AF2092E33C00A6DB35 /* AppDelegate.swift */,
-				24180CE42095577E00116188 /* StockController.swift */,
 				24D685B32092E33C00A6DB35 /* Main.storyboard */,
 				24D685B92092E34400A6DB35 /* Assets.xcassets */,
 				24D685BB2092E34400A6DB35 /* LaunchScreen.storyboard */,
 				24D685BE2092E34500A6DB35 /* Info.plist */,
 				24D685B62092E33C00A6DB35 /* Stox.xcdatamodeld */,
-				24180CEB20955E8F00116188 /* DetailController.swift */,
 			);
 			path = Stox;
 			sourceTree = "<group>";
@@ -164,11 +182,11 @@
 			path = StoxUITests;
 			sourceTree = "<group>";
 		};
-		9BA80F8E3ECB406AD1FF68EF /* Pods */ = {
+		B4FC01A4BA85AC777916D913 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A71A7F09CB0BA70B28F955EA /* Pods-Stox.debug.xcconfig */,
-				72C913DEB2664BD7CF3D52B0 /* Pods-Stox.release.xcconfig */,
+				A087A5ECB8BEC031D17AFEDE /* Pods-Stox.debug.xcconfig */,
+				42D18BAD858529DC68FE5118 /* Pods-Stox.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -176,7 +194,8 @@
 		EE6246EA2D152AEF9FA41694 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B17D72968C1C4713B3A28F11 /* Pods_Stox.framework */,
+				24180CEF20956ED400116188 /* SnapKit.framework */,
+				D389A421D3584F25B2F02EC1 /* Pods_Stox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,11 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24D685D72092E34500A6DB35 /* Build configuration list for PBXNativeTarget "Stox" */;
 			buildPhases = (
-				5DCDC64FE00EB7C6E6766AAC /* [CP] Check Pods Manifest.lock */,
+				6D02E2B9F4690BCD5260680A /* [CP] Check Pods Manifest.lock */,
 				24D685A82092E33C00A6DB35 /* Sources */,
 				24D685A92092E33C00A6DB35 /* Frameworks */,
 				24D685AA2092E33C00A6DB35 /* Resources */,
-				E628B9038228E1AFCC81F53C /* [CP] Embed Pods Frameworks */,
+				4EE04E095202267B094E931F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,25 +329,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5DCDC64FE00EB7C6E6766AAC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stox-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E628B9038228E1AFCC81F53C /* [CP] Embed Pods Frameworks */ = {
+		4EE04E095202267B094E931F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,6 +359,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stox/Pods-Stox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D02E2B9F4690BCD5260680A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -365,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24180CF520957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEC20955E8F00116188 /* DetailController.swift in Sources */,
 				242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */,
 				24180CE52095577E00116188 /* StockController.swift in Sources */,
@@ -379,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24180CEA20955D9900116188 /* UIColor+customTheme.swift in Sources */,
+				24180CF620957F2600116188 /* StockQuotes.swift in Sources */,
 				24D685C82092E34500A6DB35 /* StoxTests.swift in Sources */,
 				24180CED20955E8F00116188 /* DetailController.swift in Sources */,
 				24180CE820955CE900116188 /* StockQuote.swift in Sources */,
@@ -389,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24180CF720957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEE20955E8F00116188 /* DetailController.swift in Sources */,
 				24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */,
 			);
@@ -545,7 +567,7 @@
 		};
 		24D685D82092E34500A6DB35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A71A7F09CB0BA70B28F955EA /* Pods-Stox.debug.xcconfig */;
+			baseConfigurationReference = A087A5ECB8BEC031D17AFEDE /* Pods-Stox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,7 +586,7 @@
 		};
 		24D685D92092E34500A6DB35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C913DEB2664BD7CF3D52B0 /* Pods-Stox.release.xcconfig */;
+			baseConfigurationReference = 42D18BAD858529DC68FE5118 /* Pods-Stox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

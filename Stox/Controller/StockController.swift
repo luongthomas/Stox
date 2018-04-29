@@ -11,31 +11,22 @@ import UIKit
 class StockController: UITableViewController {
     
     let cellId = "cellId"
-    var stockQuotes = [StockQuote]()
-    
-    
+    var stockQuotes = StockQuotes()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let appleStockQuote = StockQuote(symbol: "APPL", companyName: "Apple Inc.", open: 100, close: 130, high: 150, low: 100, latestPrice: 135.5, changePercent: 0.12)
-        
-        let googleStockQuote = StockQuote(symbol: "GOOG", companyName: "Google Inc.", open: 240, close: 325, high: 375, low: 159, latestPrice: 330, changePercent: 0.25)
-        
-        stockQuotes.append(appleStockQuote)
-        stockQuotes.append(googleStockQuote)
-        
-        navigationItem.title = "Stock Quotes"
-        
+        stockQuotes.addSampleStockQuotes()
+        setupUI()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
-        
-        // Tableview UI settings
+    }
+    
+    func setupUI() {
+        navigationItem.title = "Stock Quotes"
         view.backgroundColor = .darkBlue
         tableView.tableFooterView = UIView()
         tableView.separatorColor = .white
-        
-        
     }
     
     // MARK: - Table view footer
@@ -55,6 +46,7 @@ class StockController: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailController = DetailController()
+        detailController.stockQuote = stockQuotes.itemAt(row: indexPath.row)
         let navController = UINavigationController(rootViewController: detailController)
         present(navController, animated: true, completion: nil)
     }
@@ -65,15 +57,13 @@ class StockController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-
-        let stockQuote = stockQuotes[indexPath.row]
+        if let stockQuote = stockQuotes.itemAt(row: indexPath.row) {
+            cell.textLabel?.text = stockQuote.companyName
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+            cell.textLabel?.textColor = UIColor.white
+            cell.backgroundColor = UIColor.tealColor
+        }
         
-        cell.textLabel?.text = stockQuote.companyName
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        cell.textLabel?.textColor = UIColor.white
-        cell.backgroundColor = UIColor.tealColor
-
         return cell
     }
-
 }

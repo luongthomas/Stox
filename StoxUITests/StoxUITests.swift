@@ -41,4 +41,12 @@ class StoxUITests: XCTestCase {
         XCTAssert(nav.exists, "The stock quotes navigation bar does not exist")
     }
     
+    func testDetailNavigation() {
+        app.tables.staticTexts["STOCK NAME"].firstMatch.tap()
+        app.navigationBars["Detail"].buttons["Back"].tap()
+        let nav = app.navigationBars["Stock Quotes"]
+        XCTAssert(nav.exists, "The stock quotes navigation bar does not exist")
+        
+    }
+    
 }

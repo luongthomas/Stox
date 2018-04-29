@@ -26,27 +26,9 @@
 		24180D2E20963C0300116188 /* Stox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24180D2C20963C0300116188 /* Stox.xcdatamodeld */; };
 		24180D2F20963C0300116188 /* Stox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24180D2C20963C0300116188 /* Stox.xcdatamodeld */; };
 		24180D3020963C0300116188 /* Stox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24180D2C20963C0300116188 /* Stox.xcdatamodeld */; };
-		24180D3320963F1D00116188 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D3220963F1D00116188 /* MockHTTPClient.swift */; };
-		24180D3420963F1D00116188 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D3220963F1D00116188 /* MockHTTPClient.swift */; };
-		24180D3520963F1D00116188 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D3220963F1D00116188 /* MockHTTPClient.swift */; };
-		24180D372096413400116188 /* stockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D362096413400116188 /* stockQuote.json */; };
-		24180D382096413400116188 /* stockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D362096413400116188 /* stockQuote.json */; };
-		24180D392096413400116188 /* stockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D362096413400116188 /* stockQuote.json */; };
-		24180D3F2096524300116188 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D3E2096524300116188 /* URLSessionDataTaskProtocol.swift */; };
-		24180D402096524300116188 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D3E2096524300116188 /* URLSessionDataTaskProtocol.swift */; };
-		24180D412096524300116188 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D3E2096524300116188 /* URLSessionDataTaskProtocol.swift */; };
-		24180D432096526400116188 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D422096526400116188 /* URLSessionProtocol.swift */; };
-		24180D442096526400116188 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D422096526400116188 /* URLSessionProtocol.swift */; };
-		24180D452096526400116188 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D422096526400116188 /* URLSessionProtocol.swift */; };
-		24180D472096527A00116188 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D462096527A00116188 /* MockSession.swift */; };
-		24180D482096527A00116188 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D462096527A00116188 /* MockSession.swift */; };
-		24180D492096527A00116188 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D462096527A00116188 /* MockSession.swift */; };
-		24180D4F209652A500116188 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D4E209652A500116188 /* MockDataTask.swift */; };
-		24180D50209652A500116188 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D4E209652A500116188 /* MockDataTask.swift */; };
-		24180D51209652A500116188 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D4E209652A500116188 /* MockDataTask.swift */; };
-		24180D53209653AB00116188 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D52209653AB00116188 /* HTTPClient.swift */; };
-		24180D54209653AB00116188 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D52209653AB00116188 /* HTTPClient.swift */; };
-		24180D55209653AB00116188 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24180D52209653AB00116188 /* HTTPClient.swift */; };
+		24180D752096687B00116188 /* appleStockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D742096687B00116188 /* appleStockQuote.json */; };
+		24180D762096687B00116188 /* appleStockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D742096687B00116188 /* appleStockQuote.json */; };
+		24180D772096687B00116188 /* appleStockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D742096687B00116188 /* appleStockQuote.json */; };
 		242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
@@ -91,13 +73,7 @@
 		24180D1D2095A0F100116188 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24180D1F2095A0F700116188 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24180D2D20963C0300116188 /* Stox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stox.xcdatamodel; sourceTree = "<group>"; };
-		24180D3220963F1D00116188 /* MockHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
-		24180D362096413400116188 /* stockQuote.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stockQuote.json; sourceTree = "<group>"; };
-		24180D3E2096524300116188 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
-		24180D422096526400116188 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
-		24180D462096527A00116188 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
-		24180D4E209652A500116188 /* MockDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
-		24180D52209653AB00116188 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		24180D742096687B00116188 /* appleStockQuote.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = appleStockQuote.json; sourceTree = "<group>"; };
 		242AEF7520941DA200A45E21 /* StockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuote.swift; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -211,18 +187,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		24180D3120963E0700116188 /* Network */ = {
+		24180D7820966AE400116188 /* NetworkMocks */ = {
 			isa = PBXGroup;
 			children = (
-				24180D3220963F1D00116188 /* MockHTTPClient.swift */,
-				24180D362096413400116188 /* stockQuote.json */,
-				24180D3E2096524300116188 /* URLSessionDataTaskProtocol.swift */,
-				24180D422096526400116188 /* URLSessionProtocol.swift */,
-				24180D462096527A00116188 /* MockSession.swift */,
-				24180D4E209652A500116188 /* MockDataTask.swift */,
-				24180D52209653AB00116188 /* HTTPClient.swift */,
+				24180D742096687B00116188 /* appleStockQuote.json */,
 			);
-			path = Network;
+			path = NetworkMocks;
 			sourceTree = "<group>";
 		};
 		24D685A32092E33C00A6DB35 = {
@@ -250,7 +220,7 @@
 		24D685AE2092E33C00A6DB35 /* Stox */ = {
 			isa = PBXGroup;
 			children = (
-				24180D3120963E0700116188 /* Network */,
+				24180D7820966AE400116188 /* NetworkMocks */,
 				24180D0F209594F300116188 /* Resources */,
 				24180D0E209594E300116188 /* View */,
 				24180CF32095703400116188 /* Controller */,
@@ -416,7 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24180D392096413400116188 /* stockQuote.json in Resources */,
+				24180D772096687B00116188 /* appleStockQuote.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +394,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24180D752096687B00116188 /* appleStockQuote.json in Resources */,
 				24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */,
 				24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */,
-				24180D372096413400116188 /* stockQuote.json in Resources */,
 				24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24180D382096413400116188 /* stockQuote.json in Resources */,
+				24180D762096687B00116188 /* appleStockQuote.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,14 +577,8 @@
 			files = (
 				24180D0D2095903800116188 /* StockCell.swift in Sources */,
 				24180D3020963C0300116188 /* Stox.xcdatamodeld in Sources */,
-				24180D3520963F1D00116188 /* MockHTTPClient.swift in Sources */,
 				24180CFF2095826900116188 /* Stox_Unit_Tests.swift in Sources */,
-				24180D452096526400116188 /* URLSessionProtocol.swift in Sources */,
-				24180D412096524300116188 /* URLSessionDataTaskProtocol.swift in Sources */,
-				24180D55209653AB00116188 /* HTTPClient.swift in Sources */,
-				24180D492096527A00116188 /* MockSession.swift in Sources */,
 				24180D222096163700116188 /* UIColor+customTheme.swift in Sources */,
-				24180D51209652A500116188 /* MockDataTask.swift in Sources */,
 				24180D212096153900116188 /* StockQuote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,15 +589,9 @@
 			files = (
 				24180CF520957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEC20955E8F00116188 /* DetailController.swift in Sources */,
-				24180D3320963F1D00116188 /* MockHTTPClient.swift in Sources */,
 				242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */,
-				24180D4F209652A500116188 /* MockDataTask.swift in Sources */,
-				24180D3F2096524300116188 /* URLSessionDataTaskProtocol.swift in Sources */,
-				24180D432096526400116188 /* URLSessionProtocol.swift in Sources */,
-				24180D472096527A00116188 /* MockSession.swift in Sources */,
 				24180CE52095577E00116188 /* StockController.swift in Sources */,
 				24180D2E20963C0300116188 /* Stox.xcdatamodeld in Sources */,
-				24180D53209653AB00116188 /* HTTPClient.swift in Sources */,
 				24180CE72095591400116188 /* UIColor+customTheme.swift in Sources */,
 				24180D0B2095903800116188 /* StockCell.swift in Sources */,
 				24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */,
@@ -644,13 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24180D442096526400116188 /* URLSessionProtocol.swift in Sources */,
-				24180D3420963F1D00116188 /* MockHTTPClient.swift in Sources */,
-				24180D54209653AB00116188 /* HTTPClient.swift in Sources */,
 				24180D232096163800116188 /* UIColor+customTheme.swift in Sources */,
-				24180D402096524300116188 /* URLSessionDataTaskProtocol.swift in Sources */,
-				24180D50209652A500116188 /* MockDataTask.swift in Sources */,
-				24180D482096527A00116188 /* MockSession.swift in Sources */,
 				24180D1A20959FCF00116188 /* StockQuote.swift in Sources */,
 				24180CF720957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEE20955E8F00116188 /* DetailController.swift in Sources */,

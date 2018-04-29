@@ -24,6 +24,10 @@ struct StockQuotes {
         quotes.append(googleStockQuote)
     }
     
+    mutating func removeSampleStockQuotes() {
+        quotes.removeAll()
+    }
+    
     func itemAt(row: Int) -> StockQuote? {
         return quotes[row]
     }

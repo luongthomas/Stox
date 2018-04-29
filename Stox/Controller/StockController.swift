@@ -15,11 +15,8 @@ class StockController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        stockQuotes.addSampleStockQuotes()
+        tableView.register(StockCell.self, forCellReuseIdentifier: cellId)
         setupUI()
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
     
     func setupUI() {
@@ -27,12 +24,25 @@ class StockController: UITableViewController {
         view.backgroundColor = .darkBlue
         tableView.tableFooterView = UIView()
         tableView.separatorColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "AddCompanies", style: .plain, target: self, action: #selector(addStocks))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "RemoveCompanies", style: .plain, target: self, action: #selector(removeStocks))
+    }
+    
+    @objc func addStocks() {
+        stockQuotes.addSampleStockQuotes()
+        tableView.reloadData()
+    }
+    
+    @objc func removeStocks() {
+        stockQuotes.removeSampleStockQuotes()
+        tableView.reloadData()
     }
     
     // MARK: - Table view footer
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let label = UILabel()
-        label.text = "No information for Stock Quotes available... Swipe down to try again."
+        label.numberOfLines = 0
+        label.text = "No information for Stock Quotes available...\n Swipe down to try again."
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -44,6 +54,10 @@ class StockController: UITableViewController {
     }
     
     // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailController = DetailController()
         detailController.stockQuote = stockQuotes.itemAt(row: indexPath.row)
@@ -56,14 +70,12 @@ class StockController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        if let stockQuote = stockQuotes.itemAt(row: indexPath.row) {
-            cell.textLabel?.text = stockQuote.companyName
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-            cell.textLabel?.textColor = UIColor.white
-            cell.backgroundColor = UIColor.tealColor
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! StockCell
         
+        let stockQuote = stockQuotes.itemAt(row: indexPath.row)
+        cell.stock = stockQuote
         return cell
     }
+    
+    
 }

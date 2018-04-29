@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Stox
 
 class StoxUITests: XCTestCase {
     
@@ -45,7 +46,23 @@ class StoxUITests: XCTestCase {
         app.tables.staticTexts["Apple Inc."].tap()
         let nav = app.navigationBars["Apple Inc."]
         XCTAssert(nav.exists, "The Apple Detail navigation bar does not exist")
-//        nav.buttons["Back"].tap()
     }
     
+    func testImages() {
+        
+    }
+    
+    func testAddCompanies() {
+        app.navigationBars["Stock Quotes"].buttons["AddCompanies"].tap()
+        
+        
+    }
+    
+    func testAddRemoveCompanies() {
+        
+    }
+    
+    func testEmptyStart() {
+        XCTAssert(app.tableRows.count == 0, "Initialized a company at start incorrectly")
+    }
 }

@@ -46,7 +46,6 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupObservers()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBack))
         
@@ -55,20 +54,6 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         } else {
             navigationItem.title = "Detail"
         }
-    }
-    
-    func setupObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handlePortrait), name: NSNotification.Name("portrait"), object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(handleLandscape), name: NSNotification.Name("landscape"), object: nil)
-    }
-    
-    @objc func handlePortrait(notification: NSNotification) {
-        print("handling portrait")
-    }
-    
-    @objc func handleLandscape(notification: NSNotification) {
-        print("handling landscape")
     }
     
     @objc func handleBack() {

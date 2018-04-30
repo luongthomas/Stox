@@ -13,7 +13,7 @@ class StockCell: UITableViewCell {
     public var stock: StockQuote? {
         didSet {
             if let symbol = stock?.symbol, let price = stock?.close {
-                stockNameLabel.text = symbol
+                companySymbolLabel.text = symbol
                 currentPriceLabel.text = "$\(price.rounded(toPlaces: 2))"
             }
             
@@ -24,7 +24,14 @@ class StockCell: UITableViewCell {
         }
     }
     
-    let stockNameLabel: UILabel = {
+    // MARK: UIKit Components
+    let nameImageContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.tealColor
+        return view
+    }()
+    
+    let companySymbolLabel: UILabel = {
         let label = UILabel()
         label.text = "STOCK NAME"
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -40,7 +47,7 @@ class StockCell: UITableViewCell {
         return label
     }()
     
-    let priceView: UIView = {
+    let priceViewContainer: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.darkBlue
         view.layer.cornerRadius = 3
@@ -57,14 +64,57 @@ class StockCell: UITableViewCell {
         return imageView
     }()
     
+    // MARK: Init
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        setupObservers()
         backgroundColor = UIColor.tealColor
-        addSubview(stockNameLabel)
-        addSubview(companyImageView)
-        addSubview(priceView)
-        priceView.addSubview(currentPriceLabel)
+        
+        setupCellUI()
+    }
+    
+    // MARK: NSObserver setup
+    func setupObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handlePortrait(notification:)), name: NSNotification.Name("portrait"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleLandscape(notification:)), name: NSNotification.Name("landscape"), object: nil)
+    }
+    
+    @objc func handlePortrait(notification: NSNotification) {
+        print("handling portrait")
+    }
+    
+    @objc func handleLandscape(notification: NSNotification) {
+        print("handling landscape")
+    }
+
+    
+    // MARK: UI Code
+    func setupCellUI() {
+        
+        let stackView = UIStackView(arrangedSubviews: [nameImageContainerView, priceViewContainer])
+        addSubview(stackView)
+        nameImageContainerView.addSubview(companySymbolLabel)
+        nameImageContainerView.addSubview(companyImageView)
+        
+        priceViewContainer.addSubview(currentPriceLabel)
+        
+        stackView.axis = .horizontal
+        stackView.distribution = .fillProportionally
+        stackView.snp.makeConstraints { (make) in
+            make.height.leading.trailing.top.bottom.equalToSuperview()
+        }
+        
+        nameImageContainerView.snp.makeConstraints { (make) in
+            make.bottom.top.leading.equalToSuperview()
+            make.width.equalTo(priceViewContainer.snp.width)
+            make.height.equalToSuperview()
+        }
+        
+        companySymbolLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(companyImageView.snp.right).offset(18)
+            make.top.right.bottom.equalToSuperview()
+        }
         
         companyImageView.snp.makeConstraints { (make) in
             make.height.width.equalTo(40)
@@ -72,55 +122,22 @@ class StockCell: UITableViewCell {
             make.centerY.equalToSuperview()
         }
         
-        stockNameLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(companyImageView.snp.right).offset(16)
-            make.top.right.bottom.equalToSuperview()
-        }
-        
-        priceView.snp.makeConstraints { (make) in
+        priceViewContainer.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(-6)
             make.bottom.equalToSuperview().offset(6)
             make.right.equalToSuperview()
+            make.width.equalTo(nameImageContainerView.snp.width)
             
-        }
-        
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
-            priceView.snp.makeConstraints { (make) in
-                make.width.equalTo(75)
-            }
-        } else {
-            priceView.snp.makeConstraints { (make) in
-                make.width.equalTo(25)
-            }
         }
         
         currentPriceLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.equalToSuperview()
             make.right.equalToSuperview().offset(-16)
         }
-        
-    }
-    
-    override func willTransition(to state: UITableViewCellStateMask) {
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
-            
-            print("is iPad")
-            if DeviceInfo.Orientation.isPortrait {
-                
-                priceView.snp.remakeConstraints { (make) in
-                    make.left.equalTo(75)
-                }
-            } else {
-                priceView.snp.remakeConstraints { (make) in
-                    make.left.equalTo(170)
-                }
-            }
-        }
-        
     }
 
+    // MARK: Required
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

@@ -36,9 +36,11 @@ class StockController: UITableViewController {
             print("iPad")
         }
         if DeviceInfo.Orientation.isLandscape {
-            print("currently landscape")
+            print("moving to landscape")
+            NotificationCenter.default.post(name: Notification.Name("landscape"), object: nil)
         } else {
-            print("currently portrait")
+            print("moving to portrait")
+            NotificationCenter.default.post(name: Notification.Name("portrait"), object: nil)
         }
     }
     

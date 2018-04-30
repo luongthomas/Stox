@@ -30,9 +30,21 @@ class StockController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Refresh", style: .plain, target: self, action: #selector(handleRefresh))
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        if DeviceType().isPad() {
+            print("iPad")
+        }
+        if DeviceInfo.Orientation.isLandscape {
+            print("currently landscape")
+        } else {
+            print("currently portrait")
+        }
+    }
     
     // MARK: Network calls to get StockQuotes
     @objc func handleRefresh() {
+        stockQuotes.removeSampleStockQuotes()
         fetchStocks()
         tableView.reloadData()
     }

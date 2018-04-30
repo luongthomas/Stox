@@ -81,12 +81,40 @@ class StockCell: UITableViewCell {
             make.top.equalToSuperview().offset(-6)
             make.bottom.equalToSuperview().offset(6)
             make.right.equalToSuperview()
-            make.left.equalTo(170)
+            
+        }
+        
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+            priceView.snp.makeConstraints { (make) in
+                make.width.equalTo(75)
+            }
+        } else {
+            priceView.snp.makeConstraints { (make) in
+                make.width.equalTo(25)
+            }
         }
         
         currentPriceLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.equalToSuperview()
             make.right.equalToSuperview().offset(-16)
+        }
+        
+    }
+    
+    override func willTransition(to state: UITableViewCellStateMask) {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+            
+            print("is iPad")
+            if DeviceInfo.Orientation.isPortrait {
+                
+                priceView.snp.remakeConstraints { (make) in
+                    make.left.equalTo(75)
+                }
+            } else {
+                priceView.snp.remakeConstraints { (make) in
+                    make.left.equalTo(170)
+                }
+            }
         }
         
     }

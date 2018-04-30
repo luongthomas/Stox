@@ -35,6 +35,12 @@
 		2434876D209699650006DA1F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876C209699650006DA1F /* NetworkClient.swift */; };
 		2434876E209699650006DA1F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876C209699650006DA1F /* NetworkClient.swift */; };
 		243487702096B3800006DA1F /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876F2096B3800006DA1F /* Double+Ext.swift */; };
+		243487722096B9790006DA1F /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487712096B9790006DA1F /* DeviceOrientation.swift */; };
+		243487732096B9790006DA1F /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487712096B9790006DA1F /* DeviceOrientation.swift */; };
+		243487742096B9790006DA1F /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487712096B9790006DA1F /* DeviceOrientation.swift */; };
+		243487762096C77A0006DA1F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487752096C77A0006DA1F /* DeviceType.swift */; };
+		243487772096C77A0006DA1F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487752096C77A0006DA1F /* DeviceType.swift */; };
+		243487782096C77A0006DA1F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487752096C77A0006DA1F /* DeviceType.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
 		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
@@ -78,6 +84,8 @@
 		24348769209690900006DA1F /* URLCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCreate.swift; sourceTree = "<group>"; };
 		2434876C209699650006DA1F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		2434876F2096B3800006DA1F /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		243487712096B9790006DA1F /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		243487752096C77A0006DA1F /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D685B42092E33C00A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +148,8 @@
 				24180CE62095591400116188 /* UIColor+customTheme.swift */,
 				24348769209690900006DA1F /* URLCreate.swift */,
 				2434876F2096B3800006DA1F /* Double+Ext.swift */,
+				243487712096B9790006DA1F /* DeviceOrientation.swift */,
+				243487752096C77A0006DA1F /* DeviceType.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -569,10 +579,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243487742096B9790006DA1F /* DeviceOrientation.swift in Sources */,
 				24180D0D2095903800116188 /* StockCell.swift in Sources */,
 				24180D3020963C0300116188 /* Stox.xcdatamodeld in Sources */,
 				24180CFF2095826900116188 /* Stox_Unit_Tests.swift in Sources */,
 				24180D222096163700116188 /* UIColor+customTheme.swift in Sources */,
+				243487782096C77A0006DA1F /* DeviceType.swift in Sources */,
 				24180D212096153900116188 /* StockQuote.swift in Sources */,
 				2434876E209699650006DA1F /* NetworkClient.swift in Sources */,
 			);
@@ -585,12 +597,14 @@
 				24180CF520957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEC20955E8F00116188 /* DetailController.swift in Sources */,
 				243487702096B3800006DA1F /* Double+Ext.swift in Sources */,
+				243487762096C77A0006DA1F /* DeviceType.swift in Sources */,
 				242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */,
 				2434876D209699650006DA1F /* NetworkClient.swift in Sources */,
 				24180CE52095577E00116188 /* StockController.swift in Sources */,
 				24180D2E20963C0300116188 /* Stox.xcdatamodeld in Sources */,
 				24180CE72095591400116188 /* UIColor+customTheme.swift in Sources */,
 				2434876720968D5E0006DA1F /* ChosenStocks.swift in Sources */,
+				243487722096B9790006DA1F /* DeviceOrientation.swift in Sources */,
 				2434876A209690900006DA1F /* URLCreate.swift in Sources */,
 				24180D0B2095903800116188 /* StockCell.swift in Sources */,
 				24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */,
@@ -608,7 +622,9 @@
 				24180CEE20955E8F00116188 /* DetailController.swift in Sources */,
 				24180D0C2095903800116188 /* StockCell.swift in Sources */,
 				24D685D32092E34500A6DB35 /* StoxUITests.swift in Sources */,
+				243487732096B9790006DA1F /* DeviceOrientation.swift in Sources */,
 				24180D2F20963C0300116188 /* Stox.xcdatamodeld in Sources */,
+				243487772096C77A0006DA1F /* DeviceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

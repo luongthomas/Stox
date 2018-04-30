@@ -31,4 +31,8 @@ struct StockQuotes {
     func itemAt(row: Int) -> StockQuote? {
         return quotes[row]
     }
+    
+    mutating func insert(stockQuote: StockQuote) {
+        quotes.append(stockQuote)
+    }
 }

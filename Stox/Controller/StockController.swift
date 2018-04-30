@@ -17,6 +17,8 @@ class StockController: UITableViewController {
         super.viewDidLoad()
         tableView.register(StockCell.self, forCellReuseIdentifier: cellId)
         setupUI()
+        fetchStocks()
+        tableView.reloadData()
     }
     
     func setupUI() {
@@ -29,13 +31,31 @@ class StockController: UITableViewController {
     }
     
     @objc func addStocks() {
-        stockQuotes.addSampleStockQuotes()
+        fetchStocks()
         tableView.reloadData()
     }
     
     @objc func removeStocks() {
         stockQuotes.removeSampleStockQuotes()
         tableView.reloadData()
+    }
+    
+    func fetchStocks() {
+        let chosenStocks = ChosenStocks()
+        let client = NetworkClient()
+        let urlFactory = URLCreate()
+        chosenStocks.symbols.forEach { (stockSymbol) in
+            let generatedURL = urlFactory.createUrlFrom(stockSymbol: stockSymbol)
+            client.fromNetworkCreateStockWith(url: generatedURL, completion: { [unowned self] (stockQuote) in
+                
+                // Modify array
+                self.stockQuotes.insert(stockQuote: stockQuote)
+                
+                // Insert new index into tableView
+                let newIndexPath = IndexPath(row: self.stockQuotes.count - 1, section: 0)
+                self.tableView.insertRows(at: [newIndexPath], with: .automatic)
+            })
+        }
     }
     
     // MARK: - Table view footer

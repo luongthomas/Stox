@@ -19,7 +19,7 @@ class Stox_Unit_Tests: XCTestCase {
     }
     
     func setupStub() {
-        if let path = Bundle.main.path(forResource: "appleStockQuote", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "appleStockQuoteMock", ofType: "json") {
             do {
                 let url = URL(fileURLWithPath: path)
                 let data = try Data(contentsOf: url, options: .alwaysMapped)

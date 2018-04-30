@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
@@ -37,6 +39,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage (~> 3.3)
   - Charts
   - Mockingjay
   - SnapKit (~> 4.0.0)
@@ -45,6 +48,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - AlamofireImage
     - Charts
     - Mockingjay
     - PINCache
@@ -56,6 +60,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
@@ -65,6 +70,6 @@ SPEC CHECKSUMS:
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
 
-PODFILE CHECKSUM: 813f4495b8c1ef944a10a1c07575161fba5b22b0
+PODFILE CHECKSUM: 229f36bd7d552702910d2ef9b501622f12d799bc
 
 COCOAPODS: 1.5.0

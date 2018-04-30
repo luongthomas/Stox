@@ -16,9 +16,9 @@ struct StockQuotes {
     }
     
     mutating func addSampleStockQuotes() {
-        let appleStockQuote = StockQuote(symbol: "APPL", companyName: "Apple Inc.", open: 100, close: 130, high: 150, low: 100, latestPrice: 135.5, changePercent: 0.12)
+        let appleStockQuote = StockQuote(symbol: "APPL", companyName: "Apple Inc.", open: 100, close: 130, high: 150, low: 100, latestPrice: 135.5, changePercent: 0.12, imageData: nil)
         
-        let googleStockQuote = StockQuote(symbol: "GOOG", companyName: "Google Inc.", open: 240, close: 325, high: 375, low: 159, latestPrice: 330, changePercent: 0.25)
+        let googleStockQuote = StockQuote(symbol: "GOOG", companyName: "Google Inc.", open: 240, close: 325, high: 375, low: 159, latestPrice: 330, changePercent: 0.25, imageData: nil)
         
         quotes.append(appleStockQuote)
         quotes.append(googleStockQuote)

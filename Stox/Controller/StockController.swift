@@ -26,17 +26,14 @@ class StockController: UITableViewController {
         view.backgroundColor = .darkBlue
         tableView.tableFooterView = UIView()
         tableView.separatorColor = .white
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "AddCompanies", style: .plain, target: self, action: #selector(addStocks))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "RemoveCompanies", style: .plain, target: self, action: #selector(removeStocks))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Refresh", style: .plain, target: self, action: #selector(handleRefresh))
     }
     
-    @objc func addStocks() {
+    
+    // MARK: Network calls to get StockQuotes
+    @objc func handleRefresh() {
         fetchStocks()
-        tableView.reloadData()
-    }
-    
-    @objc func removeStocks() {
-        stockQuotes.removeSampleStockQuotes()
         tableView.reloadData()
     }
     
@@ -45,15 +42,20 @@ class StockController: UITableViewController {
         let client = NetworkClient()
         let urlFactory = URLCreate()
         chosenStocks.symbols.forEach { (stockSymbol) in
-            let generatedURL = urlFactory.createUrlFrom(stockSymbol: stockSymbol)
-            client.fromNetworkCreateStockWith(url: generatedURL, completion: { [unowned self] (stockQuote) in
-                
-                // Modify array
-                self.stockQuotes.insert(stockQuote: stockQuote)
-                
-                // Insert new index into tableView
-                let newIndexPath = IndexPath(row: self.stockQuotes.count - 1, section: 0)
-                self.tableView.insertRows(at: [newIndexPath], with: .automatic)
+            let quoteUrl = urlFactory.createUrlFrom(stockSymbol: stockSymbol)
+            let imageUrl = urlFactory.createImageUrlFrom(stockSymbol: stockSymbol)
+            client.fromNetworkCreateStockWith(url: quoteUrl, completion: { [unowned self] (stockQuote) in
+                var stock = stockQuote
+                // Get Image
+                client.fromNetworkGetImageOfUrl(url: imageUrl, completion: { [unowned self] (image) in
+                    stock.imageData = image
+                    // Modify array
+                    self.stockQuotes.insert(stockQuote: stock)
+                    
+                    // Insert new index into tableView
+                    let newIndexPath = IndexPath(row: self.stockQuotes.count - 1, section: 0)
+                    self.tableView.insertRows(at: [newIndexPath], with: .automatic)
+                })
             })
         }
     }
@@ -62,7 +64,7 @@ class StockController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let label = UILabel()
         label.numberOfLines = 0
-        label.text = "No information for Stock Quotes available...\n Swipe down to try again."
+        label.text = "No information for Stock Quotes available...\n\n Press the refresh button to try again."
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -73,9 +75,9 @@ class StockController: UITableViewController {
         return stockQuotes.count == 0 ? 250 : 0
     }
     
-    // MARK: - Table view data source
+    // MARK: - Table View Cells
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 85
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -8,6 +8,7 @@ abstract_target 'Stocks' do
     pod 'Texture'
     pod 'Alamofire'
     pod 'Charts'
+    pod 'AlamofireImage', '~> 3.3'
     
     target 'Stox'
     target 'Stox_Unit_Tests' do 

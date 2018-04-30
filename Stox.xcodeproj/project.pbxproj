@@ -34,6 +34,7 @@
 		2434876B209690900006DA1F /* URLCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24348769209690900006DA1F /* URLCreate.swift */; };
 		2434876D209699650006DA1F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876C209699650006DA1F /* NetworkClient.swift */; };
 		2434876E209699650006DA1F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876C209699650006DA1F /* NetworkClient.swift */; };
+		243487702096B3800006DA1F /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876F2096B3800006DA1F /* Double+Ext.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
 		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		2434876620968D5E0006DA1F /* ChosenStocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenStocks.swift; sourceTree = "<group>"; };
 		24348769209690900006DA1F /* URLCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCreate.swift; sourceTree = "<group>"; };
 		2434876C209699650006DA1F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		2434876F2096B3800006DA1F /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D685B42092E33C00A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				24180CE62095591400116188 /* UIColor+customTheme.swift */,
 				24348769209690900006DA1F /* URLCreate.swift */,
+				2434876F2096B3800006DA1F /* Double+Ext.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -220,13 +223,13 @@
 		24D685AE2092E33C00A6DB35 /* Stox */ = {
 			isa = PBXGroup;
 			children = (
+				24180CE22094418300116188 /* Model */,
 				2434876520968D4A0006DA1F /* Objects */,
 				24180D7820966AE400116188 /* Network */,
 				24180D0F209594F300116188 /* Resources */,
 				24180D0E209594E300116188 /* View */,
 				24180CF32095703400116188 /* Controller */,
 				24180CE32095550100116188 /* Utility */,
-				24180CE22094418300116188 /* Model */,
 				24D685AF2092E33C00A6DB35 /* AppDelegate.swift */,
 				24D685B92092E34400A6DB35 /* Assets.xcassets */,
 			);
@@ -409,25 +412,27 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-StoxUITests/Pods-Stocks-StoxUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,25 +466,27 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-Stox_Unit_Tests/Pods-Stocks-Stox_Unit_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,26 +502,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stocks-Stox/Pods-Stocks-Stox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
-				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -579,6 +584,7 @@
 			files = (
 				24180CF520957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEC20955E8F00116188 /* DetailController.swift in Sources */,
+				243487702096B3800006DA1F /* Double+Ext.swift in Sources */,
 				242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */,
 				2434876D209699650006DA1F /* NetworkClient.swift in Sources */,
 				24180CE52095577E00116188 /* StockController.swift in Sources */,

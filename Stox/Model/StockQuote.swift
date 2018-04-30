@@ -17,4 +17,5 @@ struct StockQuote: Decodable {
     let low: Double
     let latestPrice: Double
     let changePercent: Double
+    var imageData: Data? = nil
 }

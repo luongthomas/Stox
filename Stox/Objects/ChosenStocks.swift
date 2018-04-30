@@ -11,6 +11,6 @@ import Foundation
 
 struct ChosenStocks {
     
-    let symbols = ["INTC", "AAPL", "FB", "EBAY", "AMZN", "GOOG", "NFLX", "TSLA", "NVDA", "BIDU", "NKE", "AMD", "GOOGL"]
+    let symbols = ["INTC", "AAPL", "FB", "EBAY", "AMZN", "GOOG", "NFLX", "TSLA", "NVDA", "BIDU", "NKE", "AMD"]
     
 }

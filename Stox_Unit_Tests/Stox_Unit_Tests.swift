@@ -16,8 +16,9 @@ class Stox_Unit_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
+    }
+    
+    func setupStub() {
         if let path = Bundle.main.path(forResource: "appleStockQuote", ofType: "json") {
             do {
                 let url = URL(fileURLWithPath: path)
@@ -28,9 +29,6 @@ class Stox_Unit_Tests: XCTestCase {
                 print("Error reading json: \(readErr)")
             }
         }
-        
-        // Stubbing all requests to return the APPLE JSON fil
-        
     }
     
     override func tearDown() {
@@ -58,7 +56,37 @@ class Stox_Unit_Tests: XCTestCase {
         XCTAssert(count == 2, "Adding sample stocks to stocksQuotes did not increase count")
     }
     
+    func testCreateStockFromNetwork() {
+        
+        let stockSymbol = "TSLA"
+        let urlCreate = URLCreate()
+        let generatedUrl = urlCreate.createUrlFrom(stockSymbol: stockSymbol)
+
+        fromNetworkCreateStockWith(url: generatedUrl) { (stockQuote) in
+            XCTAssert(stockQuote.companyName == "Tesla Inc.", "Tesla Object not created properly")
+        }
+    }
+    
+    func fromNetworkCreateStockWith(url: String, completion: @escaping (StockQuote) -> Void){
+        let e = expectation(description: "Alamofire")
+        Alamofire.request(url).responseJSON { (response) in
+            if let data = response.data {
+                let jsonDecoder = JSONDecoder()
+                do {
+                    let stock = try jsonDecoder.decode(StockQuote.self, from: data)
+                    completion(stock)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            e.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+    
     func testAlamofireResponse() {
+        setupStub()
         let url = "https://httpbin.org/get"
         let e = expectation(description: "Alamofire")
         
@@ -92,4 +120,12 @@ class Stox_Unit_Tests: XCTestCase {
         waitForExpectations(timeout: 5.0, handler: nil)
     }
 
+    func testCreateTeslaUrl() {
+        let stockSymbol = "TSLA"
+        let urlCreate = URLCreate()
+        let generatedUrl = urlCreate.createUrlFrom(stockSymbol: stockSymbol)
+        XCTAssertEqual(generatedUrl, "https://api.iextrading.com/1.0/stock/TSLA/quote", "Did not create the expecting URL for TSLA")
+    }
+    
+    
 }

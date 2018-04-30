@@ -29,6 +29,9 @@
 		24180D762096687B00116188 /* appleStockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D742096687B00116188 /* appleStockQuote.json */; };
 		24180D772096687B00116188 /* appleStockQuote.json in Resources */ = {isa = PBXBuildFile; fileRef = 24180D742096687B00116188 /* appleStockQuote.json */; };
 		242AEF7620941DA200A45E21 /* StockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242AEF7520941DA200A45E21 /* StockQuote.swift */; };
+		2434876720968D5E0006DA1F /* ChosenStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876620968D5E0006DA1F /* ChosenStocks.swift */; };
+		2434876A209690900006DA1F /* URLCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24348769209690900006DA1F /* URLCreate.swift */; };
+		2434876B209690900006DA1F /* URLCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24348769209690900006DA1F /* URLCreate.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
 		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
@@ -68,6 +71,8 @@
 		24180D2D20963C0300116188 /* Stox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stox.xcdatamodel; sourceTree = "<group>"; };
 		24180D742096687B00116188 /* appleStockQuote.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = appleStockQuote.json; sourceTree = "<group>"; };
 		242AEF7520941DA200A45E21 /* StockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuote.swift; sourceTree = "<group>"; };
+		2434876620968D5E0006DA1F /* ChosenStocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenStocks.swift; sourceTree = "<group>"; };
+		24348769209690900006DA1F /* URLCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCreate.swift; sourceTree = "<group>"; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D685B42092E33C00A6DB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				24180CE62095591400116188 /* UIColor+customTheme.swift */,
+				24348769209690900006DA1F /* URLCreate.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -177,6 +183,14 @@
 			path = NetworkMocks;
 			sourceTree = "<group>";
 		};
+		2434876520968D4A0006DA1F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2434876620968D5E0006DA1F /* ChosenStocks.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		24D685A32092E33C00A6DB35 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +216,7 @@
 		24D685AE2092E33C00A6DB35 /* Stox */ = {
 			isa = PBXGroup;
 			children = (
+				2434876520968D4A0006DA1F /* Objects */,
 				24180D7820966AE400116188 /* NetworkMocks */,
 				24180D0F209594F300116188 /* Resources */,
 				24180D0E209594E300116188 /* View */,
@@ -563,6 +578,8 @@
 				24180CE52095577E00116188 /* StockController.swift in Sources */,
 				24180D2E20963C0300116188 /* Stox.xcdatamodeld in Sources */,
 				24180CE72095591400116188 /* UIColor+customTheme.swift in Sources */,
+				2434876720968D5E0006DA1F /* ChosenStocks.swift in Sources */,
+				2434876A209690900006DA1F /* URLCreate.swift in Sources */,
 				24180D0B2095903800116188 /* StockCell.swift in Sources */,
 				24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */,
 			);
@@ -573,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24180D232096163800116188 /* UIColor+customTheme.swift in Sources */,
+				2434876B209690900006DA1F /* URLCreate.swift in Sources */,
 				24180D1A20959FCF00116188 /* StockQuote.swift in Sources */,
 				24180CF720957F2600116188 /* StockQuotes.swift in Sources */,
 				24180CEE20955E8F00116188 /* DetailController.swift in Sources */,

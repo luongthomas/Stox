@@ -82,10 +82,14 @@ class StockCell: UITableViewCell {
     
     @objc func handlePortrait(notification: NSNotification) {
         print("handling portrait")
+        currentPriceLabel.textAlignment = .right
+        companySymbolLabel.textAlignment = .left
     }
     
     @objc func handleLandscape(notification: NSNotification) {
         print("handling landscape")
+        currentPriceLabel.textAlignment = .center
+        companySymbolLabel.textAlignment = .center
     }
 
     

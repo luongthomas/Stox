@@ -14,8 +14,7 @@ class StockCell: UITableViewCell {
         didSet {
             if let symbol = stock?.symbol, let price = stock?.close {
                 companySymbolLabel.text = symbol
-                let rounded = price.rounded(toPlaces: 2)
-                currentPriceLabel.text = "$\(rounded)"
+                currentPriceLabel.text = String(format: "$%.02f", price)
             }
             
             if let imageData = stock?.imageData {

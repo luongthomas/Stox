@@ -16,9 +16,6 @@ Stock Quote data are retrieved via JSON in an asynchronous manner.
 
 ## Installation
 
-#### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
-
 ```
 cd Stox
 pod update && pod install

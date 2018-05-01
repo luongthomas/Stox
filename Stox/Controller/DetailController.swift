@@ -85,8 +85,6 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupObservers()
-        
         highTitleContainer = createTitleContainerView()
         lowTitleContainer = createTitleContainerView()
         highValueContainer = createTitleContainerView()
@@ -117,21 +115,6 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    // MARK: NSObserver setup
-    func setupObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handlePortrait(notification:)), name: NSNotification.Name("portrait"), object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(handleLandscape(notification:)), name: NSNotification.Name("landscape"), object: nil)
-    }
-    
-    @objc func handlePortrait(notification: NSNotification) {
-        
-        
-    }
-    
-    @objc func handleLandscape(notification: NSNotification) {
-        
-    }
     
     // MARK: Creating Container Views and Title Labels
     func createTitleContainerView() -> UIView {

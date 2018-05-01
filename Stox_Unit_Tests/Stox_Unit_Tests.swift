@@ -48,16 +48,7 @@ class Stox_Unit_Tests: XCTestCase {
         }
     }
     
-    func testAddingSampleStockQuotes() {
-        var stockQuotes = StockQuotes()
-        stockQuotes.addSampleStockQuotes()
-        let count = stockQuotes.count
-        
-        XCTAssert(count == 2, "Adding sample stocks to stocksQuotes did not increase count")
-    }
-    
     func testCreateStockFromNetwork() {
-        
         let stockSymbol = "TSLA"
         let urlCreate = URLCreate()
         let generatedUrl = urlCreate.createUrlFrom(stockSymbol: stockSymbol)
@@ -81,7 +72,6 @@ class Stox_Unit_Tests: XCTestCase {
             }
             e.fulfill()
         }
-        
         waitForExpectations(timeout: 5.0, handler: nil)
     }
     
@@ -113,7 +103,6 @@ class Stox_Unit_Tests: XCTestCase {
                     print(error.localizedDescription)
                 }
             }
-            
             e.fulfill()
         }
         

@@ -8,6 +8,8 @@
 
 import XCTest
 @testable import Stox
+import Mockingjay
+import Alamofire
 
 class StoxUITests: XCTestCase {
     
@@ -24,7 +26,21 @@ class StoxUITests: XCTestCase {
         app = XCUIApplication()
         app.launch()
 
+        setupStub()
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    }
+    
+    func setupStub() {
+        if let path = Bundle.main.path(forResource: "appleStockQuoteMock", ofType: "json") {
+            do {
+                let url = URL(fileURLWithPath: path)
+                let data = try Data(contentsOf: url, options: .alwaysMapped)
+                
+                stub(everything, jsonData(data))
+            } catch let readErr {
+                print("Error reading json: \(readErr)")
+            }
+        }
     }
     
     override func tearDown() {
@@ -42,27 +58,42 @@ class StoxUITests: XCTestCase {
         XCTAssert(nav.exists, "The stock quotes navigation bar does not exist")
     }
     
-    func testPressCompany() {
-        app.tables.staticTexts["Apple Inc."].tap()
-        let nav = app.navigationBars["Apple Inc."]
-        XCTAssert(nav.exists, "The Apple Detail navigation bar does not exist")
+    func testNetflixDetailView() {
+        let netflixRow = app.tables/*@START_MENU_TOKEN@*/.staticTexts["NFLX"]/*[[".cells.staticTexts[\"NFLX\"]",".staticTexts[\"NFLX\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let pred = NSPredicate(format: "exists == true")
+        let exp = expectation(for: pred, evaluatedWith: netflixRow, handler: nil)
+        let res = XCTWaiter.wait(for: [exp], timeout: 5.0)
+        XCTAssert(res == XCTWaiter.Result.completed, "Failed time out waiting for netflix Row")
+        
+        netflixRow.tap()
+        let netflixNav = app.navigationBars["Netflix Inc."]
+        XCTAssert(netflixNav.exists, "The Netflix nav bar did not change")
+        
+        netflixNav.buttons["Back"].tap()
+        let mainNav = app.navigationBars["Stock Quotes"]
+        XCTAssert(mainNav.exists, "The nav bar did not change back to the main view")
     }
     
-    func testImages() {
+    func testRefresh() {
+        let netflixRow = app.tables/*@START_MENU_TOKEN@*/.staticTexts["NFLX"]/*[[".cells.staticTexts[\"NFLX\"]",".staticTexts[\"NFLX\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let pred = NSPredicate(format: "exists == true")
+        let exp = expectation(for: pred, evaluatedWith: netflixRow, handler: nil)
+        let res = XCTWaiter.wait(for: [exp], timeout: 5.0)
+        XCTAssert(res == XCTWaiter.Result.completed, "Failed time out waiting for netflix Row")
         
-    }
-    
-    func testAddCompanies() {
-        app.navigationBars["Stock Quotes"].buttons["AddCompanies"].tap()
+        app.buttons["Refresh"].tap()
+        XCTAssertFalse(netflixRow.exists, "Refresh button did not clear the netflix row")
+        let not_pred = NSPredicate(format: "exists == false")
+        let not_exp = expectation(for: not_pred, evaluatedWith: netflixRow, handler: nil)
+        let not_res = XCTWaiter.wait(for: [not_exp], timeout: 5.0)
+        XCTAssert(not_res == XCTWaiter.Result.completed, "Failed time out waiting for netflix Row to remove itself")
         
-        
-    }
-    
-    func testAddRemoveCompanies() {
-        
+        let refreshRes = XCTWaiter.wait(for: [exp], timeout: 5.0)
+        XCTAssert(refreshRes == XCTWaiter.Result.completed, "Failed time out waiting for netflix Row after refresh")
     }
     
     func testEmptyStart() {
         XCTAssert(app.tableRows.count == 0, "Initialized stocks at start incorrectly")
     }
+    
 }

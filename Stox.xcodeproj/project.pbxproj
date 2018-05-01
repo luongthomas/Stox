@@ -44,6 +44,8 @@
 		24C3B3D22097FF8200582C37 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876F2096B3800006DA1F /* Double+Ext.swift */; };
 		24C3B3D32097FF8200582C37 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876F2096B3800006DA1F /* Double+Ext.swift */; };
 		24C3B3D42097FFE500582C37 /* URLCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24348769209690900006DA1F /* URLCreate.swift */; };
+		24C3B3D52098278300582C37 /* ChosenStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876620968D5E0006DA1F /* ChosenStocks.swift */; };
+		24C3B3D62098278300582C37 /* ChosenStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876620968D5E0006DA1F /* ChosenStocks.swift */; };
 		24D685B02092E33C00A6DB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D685AF2092E33C00A6DB35 /* AppDelegate.swift */; };
 		24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B32092E33C00A6DB35 /* Main.storyboard */; };
 		24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D685B92092E34400A6DB35 /* Assets.xcassets */; };
@@ -593,6 +595,7 @@
 				243487742096B9790006DA1F /* DeviceOrientation.swift in Sources */,
 				24180D0D2095903800116188 /* StockCell.swift in Sources */,
 				24180D3020963C0300116188 /* Stox.xcdatamodeld in Sources */,
+				24C3B3D52098278300582C37 /* ChosenStocks.swift in Sources */,
 				24180CFF2095826900116188 /* Stox_Unit_Tests.swift in Sources */,
 				24180D222096163700116188 /* UIColor+customTheme.swift in Sources */,
 				243487782096C77A0006DA1F /* DeviceType.swift in Sources */,
@@ -632,6 +635,7 @@
 				2434876B209690900006DA1F /* URLCreate.swift in Sources */,
 				24180D1A20959FCF00116188 /* StockQuote.swift in Sources */,
 				24180CF720957F2600116188 /* StockQuotes.swift in Sources */,
+				24C3B3D62098278300582C37 /* ChosenStocks.swift in Sources */,
 				24C3B3D32097FF8200582C37 /* Double+Ext.swift in Sources */,
 				24180CEE20955E8F00116188 /* DetailController.swift in Sources */,
 				24180D0C2095903800116188 /* StockCell.swift in Sources */,

@@ -105,7 +105,7 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         setupStockInfoUI()
         
         if let stockQuote = stockQuote {
-            navigationItem.title = stockQuote.companyName
+            navigationItem.title = stockQuote.symbol
         } else {
             navigationItem.title = "Detail"
         }

@@ -16,10 +16,10 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
             if let changePercent = stockQuote?.changePercent {
                 
                 if changePercent >= 0 {
-                    changePercentLabel.text = "+\(changePercent.rounded(toPlaces: 2))%"
+                    changePercentLabel.text = "+\(changePercent.rounded(toPlaces: 3))%"
                     changePercentLabel.textColor = UIColor.lightGreen
                 } else {
-                    changePercentLabel.text = "\(changePercent.rounded(toPlaces: 2))%"
+                    changePercentLabel.text = "\(changePercent.rounded(toPlaces: 3))%"
                     changePercentLabel.textColor = UIColor.salmonPink
                 }
             }

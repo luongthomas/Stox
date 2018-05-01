@@ -20,6 +20,14 @@ class StockCell: UITableViewCell {
             if let imageData = stock?.imageData {
                 companyImageView.image = UIImage(data: imageData)
             }
+            
+            if let percentChange = stock?.changePercent {
+                if percentChange >= 0 {
+                    priceChangeArrow.image = #imageLiteral(resourceName: "green up")
+                } else {
+                    priceChangeArrow.image = #imageLiteral(resourceName: "red_down")
+                }
+            }
         }
     }
     
@@ -51,6 +59,13 @@ class StockCell: UITableViewCell {
         view.backgroundColor = UIColor.darkBlue
         view.layer.cornerRadius = 3
         return view
+    }()
+    
+    let priceChangeArrow: UIImageView = {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "green up").withRenderingMode(.alwaysOriginal))
+        imageView.contentMode = .scaleAspectFit
+        imageView.clipsToBounds = false
+        return imageView
     }()
     
     let companyImageView: UIImageView = {
@@ -101,6 +116,7 @@ class StockCell: UITableViewCell {
         nameImageContainerView.addSubview(companyImageView)
         
         priceViewContainer.addSubview(currentPriceLabel)
+        priceViewContainer.addSubview(priceChangeArrow)
         
         stackView.axis = .horizontal
         stackView.distribution = .fillProportionally
@@ -132,7 +148,14 @@ class StockCell: UITableViewCell {
         
         currentPriceLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.equalToSuperview()
+            make.right.equalTo(priceChangeArrow.snp.left).offset(-16)
+        }
+        
+        priceChangeArrow.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-16)
+            make.top.bottom.equalToSuperview()
+            make.left.equalTo(currentPriceLabel.snp.right)
+            make.height.width.equalTo(20)
         }
     }
 

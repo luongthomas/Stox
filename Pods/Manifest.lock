@@ -2,9 +2,6 @@ PODS:
   - Alamofire (4.7.2)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
-  - Charts (3.1.1):
-    - Charts/Core (= 3.1.1)
-  - Charts/Core (3.1.1)
   - Mockingjay (2.0.1):
     - Mockingjay/Core (= 2.0.1)
     - Mockingjay/XCTest (= 2.0.1)
@@ -12,64 +9,30 @@ PODS:
     - URITemplate (~> 2.0)
   - Mockingjay/XCTest (2.0.1):
     - Mockingjay/Core
-  - PINCache (3.0.1-beta.6):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
-    - PINCache/Core (= 3.0.1-beta.6)
-  - PINCache/Arc-exception-safe (3.0.1-beta.6):
-    - PINCache/Core
-  - PINCache/Core (3.0.1-beta.6):
-    - PINOperation (~> 1.1.0)
-  - PINOperation (1.1.1)
-  - PINRemoteImage/Core (3.0.0-beta.13):
-    - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.13):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.13):
-    - PINCache (= 3.0.1-beta.6)
-    - PINRemoteImage/Core
   - SnapKit (4.0.0)
-  - Texture (2.6):
-    - Texture/PINRemoteImage (= 2.6)
-  - Texture/Core (2.6)
-  - Texture/PINRemoteImage (2.6):
-    - PINRemoteImage/iOS (= 3.0.0-beta.13)
-    - PINRemoteImage/PINCache
-    - Texture/Core
   - URITemplate (2.0.3)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage (~> 3.3)
-  - Charts
   - Mockingjay
   - SnapKit (~> 4.0.0)
-  - Texture
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireImage
-    - Charts
     - Mockingjay
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
     - SnapKit
-    - Texture
     - URITemplate
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
 
-PODFILE CHECKSUM: 7135f71a89f533a82f2ea8c98376cd648f3cef89
+PODFILE CHECKSUM: d0ba089d25bbc7d4a52ab5ca1cdcb7735026434d
 
 COCOAPODS: 1.5.0

@@ -14,13 +14,13 @@ class StockCell: UITableViewCell {
         didSet {
             if let symbol = stock?.symbol, let price = stock?.close {
                 companySymbolLabel.text = symbol
-                currentPriceLabel.text = "$\(price.rounded(toPlaces: 2))"
+                let rounded = price.rounded(toPlaces: 2)
+                currentPriceLabel.text = "$\(rounded)"
             }
             
             if let imageData = stock?.imageData {
                 companyImageView.image = UIImage(data: imageData)
             }
-            
         }
     }
     
@@ -127,11 +127,8 @@ class StockCell: UITableViewCell {
         }
         
         priceViewContainer.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(-6)
-            make.bottom.equalToSuperview().offset(6)
             make.right.equalToSuperview()
             make.width.equalTo(nameImageContainerView.snp.width)
-            
         }
         
         currentPriceLabel.snp.makeConstraints { (make) in

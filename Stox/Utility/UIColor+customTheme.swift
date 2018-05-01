@@ -17,4 +17,7 @@ public extension UIColor {
     
     static let tealColor = UIColor(red: 48/255, green: 164/255, blue: 182/255, alpha: 1)
     
+    static let lightGreen = UIColor(red: 138/255, green: 189/255, blue: 95/255, alpha: 1)
+    
+    static let salmonPink = UIColor(red: 209/255, green: 104/244, blue: 109/255, alpha: 1)
 }

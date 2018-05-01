@@ -29,7 +29,6 @@ struct NetworkClient {
     func fromNetworkGetImageOfUrl(url: String, completion: @escaping (Data) -> Void) {
         Alamofire.request(url).responseImage { (response) in
             if let image = response.result.value {
-                print("Image downloaded: \(image)")
                 let imageData: Data = UIImagePNGRepresentation(image)!
                 completion(imageData)
             }   else {

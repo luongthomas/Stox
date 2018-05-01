@@ -41,7 +41,7 @@ class StockCell: UITableViewCell {
     let currentPriceLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textAlignment = .right
         return label
     }()

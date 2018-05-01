@@ -166,6 +166,7 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         let lowStackView = UIStackView(arrangedSubviews: [lowTitleContainer, lowValueContainer])
         lowStackView.axis = .vertical
         lowStackView.distribution = .fillEqually
+        lowStackView.spacing = 10
         
         lowTitleContainer.addSubview(lowTitleLabel)
         lowTitleLabel.snp.makeConstraints { (make) in
@@ -195,6 +196,7 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         
         let highStackView = UIStackView(arrangedSubviews: [highTitleContainer, highValueContainer])
         highStackView.axis = .vertical
+        highStackView.spacing = 10
         highStackView.distribution = .fillEqually
         
         lowTitleContainer.addSubview(lowTitleLabel)
@@ -216,6 +218,7 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         let highLowStackView = UIStackView(arrangedSubviews: [highStackView, lowStackView])
         highLowStackView.axis = .horizontal
         highLowStackView.distribution = .fillEqually
+        highLowStackView.spacing = 10
         
         lightBlueBackgroundView.addSubview(highLowStackView)
         highLowStackView.snp.makeConstraints { (make) in

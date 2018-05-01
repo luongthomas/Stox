@@ -215,7 +215,7 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
             make.height.equalTo(25)
         }
         
-        let highLowStackView = UIStackView(arrangedSubviews: [highStackView, lowStackView])
+        let highLowStackView = UIStackView(arrangedSubviews: [lowStackView, highStackView])
         highLowStackView.axis = .horizontal
         highLowStackView.distribution = .fillEqually
         highLowStackView.spacing = 10

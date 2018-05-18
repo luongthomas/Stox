@@ -41,6 +41,8 @@
 		243487762096C77A0006DA1F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487752096C77A0006DA1F /* DeviceType.swift */; };
 		243487772096C77A0006DA1F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487752096C77A0006DA1F /* DeviceType.swift */; };
 		243487782096C77A0006DA1F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243487752096C77A0006DA1F /* DeviceType.swift */; };
+		24ADD1D820AE9AAD0062DFFC /* NullValueQuoteMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 24ADD1D720AE9AAD0062DFFC /* NullValueQuoteMock.json */; };
+		24ADD1D920AE9AAD0062DFFC /* NullValueQuoteMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 24ADD1D720AE9AAD0062DFFC /* NullValueQuoteMock.json */; };
 		24C3B3D22097FF8200582C37 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876F2096B3800006DA1F /* Double+Ext.swift */; };
 		24C3B3D32097FF8200582C37 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434876F2096B3800006DA1F /* Double+Ext.swift */; };
 		24C3B3D42097FFE500582C37 /* URLCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24348769209690900006DA1F /* URLCreate.swift */; };
@@ -92,6 +94,7 @@
 		2434876F2096B3800006DA1F /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		243487712096B9790006DA1F /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
 		243487752096C77A0006DA1F /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		24ADD1D720AE9AAD0062DFFC /* NullValueQuoteMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NullValueQuoteMock.json; sourceTree = "<group>"; };
 		24C3B3D02097631400582C37 /* Mockingjay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AC2092E33C00A6DB35 /* Stox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D685AF2092E33C00A6DB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +205,7 @@
 			children = (
 				24180D742096687B00116188 /* appleStockQuoteMock.json */,
 				2434876C209699650006DA1F /* NetworkClient.swift */,
+				24ADD1D720AE9AAD0062DFFC /* NullValueQuoteMock.json */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -396,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24180D772096687B00116188 /* appleStockQuoteMock.json in Resources */,
+				24ADD1D920AE9AAD0062DFFC /* NullValueQuoteMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24180D752096687B00116188 /* appleStockQuoteMock.json in Resources */,
+				24ADD1D820AE9AAD0062DFFC /* NullValueQuoteMock.json in Resources */,
 				24D685BD2092E34400A6DB35 /* LaunchScreen.storyboard in Resources */,
 				24D685BA2092E34400A6DB35 /* Assets.xcassets in Resources */,
 				24D685B52092E33C00A6DB35 /* Main.storyboard in Resources */,

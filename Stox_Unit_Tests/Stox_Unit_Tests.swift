@@ -18,18 +18,7 @@ class Stox_Unit_Tests: XCTestCase {
         super.setUp()
     }
     
-    func setupStub() {
-        if let path = Bundle.main.path(forResource: "appleStockQuoteMock", ofType: "json") {
-            do {
-                let url = URL(fileURLWithPath: path)
-                let data = try Data(contentsOf: url, options: .alwaysMapped)
-                
-                stub(everything, jsonData(data))
-            } catch let readErr {
-                print("Error reading json: \(readErr)")
-            }
-        }
-    }
+    
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
@@ -48,6 +37,7 @@ class Stox_Unit_Tests: XCTestCase {
         }
     }
     
+    // Network Unit Tests via Alamofire
     func testCreateStockFromNetwork() {
         let stockSymbol = "TSLA"
         let urlCreate = URLCreate()
@@ -58,25 +48,9 @@ class Stox_Unit_Tests: XCTestCase {
         }
     }
     
-    func fromNetworkCreateStockWith(url: String, completion: @escaping (StockQuote) -> Void){
-        let e = expectation(description: "Alamofire")
-        Alamofire.request(url).responseJSON { (response) in
-            if let data = response.data {
-                let jsonDecoder = JSONDecoder()
-                do {
-                    let stock = try jsonDecoder.decode(StockQuote.self, from: data)
-                    completion(stock)
-                } catch {
-                    print(error.localizedDescription)
-                }
-            }
-            e.fulfill()
-        }
-        waitForExpectations(timeout: 5.0, handler: nil)
-    }
-    
-    func testAlamofireResponse() {
-        setupStub()
+    // MARK: Mock Data Tests
+    func testMockAlamofireResponse() {
+        setupStub(mockJsonFileName: "appleStockQuoteMock")
         let url = "https://httpbin.org/get"
         let e = expectation(description: "Alamofire")
         
@@ -108,6 +82,41 @@ class Stox_Unit_Tests: XCTestCase {
         
         waitForExpectations(timeout: 5.0, handler: nil)
     }
+    
+    func testMockDataWithNullValues() {
+        setupStub(mockJsonFileName: "NullValueQuoteMock")
+        let url = "https://httpbin.org/get"
+        let e = expectation(description: "Alamofire")
+        
+        Alamofire.request(url).responseJSON { (response) in
+            XCTAssertNil(response.error, "Whoops, error \(response.error!.localizedDescription)")
+            XCTAssertEqual(response.response?.statusCode ?? 0, 200, "Status code not 200")
+            XCTAssertNotNil(response, "No response")
+            
+            // Test Decoded Data
+            if let data = response.data {
+                let jsonDecoder = JSONDecoder()
+                do {
+                    let stockQuote = try jsonDecoder.decode(StockQuote.self, from: data)
+                    print(stockQuote)
+                    XCTAssertEqual(stockQuote.companyName, "Apple Inc.")
+                    XCTAssertEqual(stockQuote.symbol, "AAPL")
+                    XCTAssertEqual(stockQuote.changePercent, -0.01157)
+                    XCTAssertEqual(stockQuote.close, nil)
+                    XCTAssertEqual(stockQuote.open, nil)
+                    XCTAssertEqual(stockQuote.high, nil)
+                    XCTAssertEqual(stockQuote.low, nil)
+                    XCTAssertEqual(stockQuote.latestPrice, 162.32)
+                    
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            e.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
 
     func testCreateTeslaUrl() {
         let stockSymbol = "TSLA"
@@ -116,5 +125,34 @@ class Stox_Unit_Tests: XCTestCase {
         XCTAssertEqual(generatedUrl, "https://api.iextrading.com/1.0/stock/TSLA/quote", "Did not create the expecting URL for TSLA")
     }
     
+    // MARK: Helper Functions
+    func fromNetworkCreateStockWith(url: String, completion: @escaping (StockQuote) -> Void){
+        let e = expectation(description: "Alamofire")
+        Alamofire.request(url).responseJSON { (response) in
+            if let data = response.data {
+                let jsonDecoder = JSONDecoder()
+                do {
+                    let stock = try jsonDecoder.decode(StockQuote.self, from: data)
+                    completion(stock)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            e.fulfill()
+        }
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
     
+    func setupStub(mockJsonFileName: String) {
+        if let path = Bundle.main.path(forResource: mockJsonFileName, ofType: "json") {
+            do {
+                let url = URL(fileURLWithPath: path)
+                let data = try Data(contentsOf: url, options: .alwaysMapped)
+                
+                stub(everything, jsonData(data))
+            } catch let readErr {
+                print("Error reading json: \(readErr)")
+            }
+        }
+    }
 }

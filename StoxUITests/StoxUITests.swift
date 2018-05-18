@@ -58,6 +58,8 @@ class StoxUITests: XCTestCase {
         XCTAssert(nav.exists, "The stock quotes navigation bar does not exist")
     }
     
+    
+    
     func testNetflixDetailView() {
         let netflixRow = app.tables/*@START_MENU_TOKEN@*/.staticTexts["NFLX"]/*[[".cells.staticTexts[\"NFLX\"]",".staticTexts[\"NFLX\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         let pred = NSPredicate(format: "exists == true")
@@ -66,8 +68,11 @@ class StoxUITests: XCTestCase {
         XCTAssert(res == XCTWaiter.Result.completed, "Failed time out waiting for netflix Row")
         
         netflixRow.tap()
-        let netflixNav = app.navigationBars["Netflix Inc."]
+        let netflixNav = app.navigationBars["NFLX"]
         XCTAssert(netflixNav.exists, "The Netflix nav bar did not change")
+        
+        let openDefaultValue = "10"
+        XCTAssertFalse(app.staticTexts[openDefaultValue].exists, "The default value for Open is displayed")
         
         netflixNav.buttons["Back"].tap()
         let mainNav = app.navigationBars["Stock Quotes"]

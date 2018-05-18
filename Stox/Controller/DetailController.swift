@@ -44,15 +44,15 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
         return imageView
     }()
     
-    var highValueLabel: UILabel = UILabel()
-    var lowValueLabel: UILabel = UILabel()
-    var lowTitleLabel: UILabel = UILabel()
-    var highTitleLabel: UILabel = UILabel()
+    var closeValueLabel: UILabel = UILabel()
+    var openValueLabel: UILabel = UILabel()
+    var openTitleLabel: UILabel = UILabel()
+    var closeTitleLabel: UILabel = UILabel()
     
-    var lowValueContainer: UIView = UIView()
-    var highValueContainer: UIView = UIView()
-    var highTitleContainer: UIView = UIView()
-    var lowTitleContainer: UIView = UIView()
+    var openValueContainer: UIView = UIView()
+    var closeValueContainer: UIView = UIView()
+    var closeTitleContainer: UIView = UIView()
+    var openTitleContainer: UIView = UIView()
     
     let nameLabel: UILabel = {
         let label = UILabel()
@@ -85,19 +85,19 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        highTitleContainer = createTitleContainerView()
-        lowTitleContainer = createTitleContainerView()
-        highValueContainer = createTitleContainerView()
-        lowValueContainer = createTitleContainerView()
+        closeTitleContainer = createTitleContainerView()
+        openTitleContainer = createTitleContainerView()
+        closeValueContainer = createTitleContainerView()
+        openValueContainer = createTitleContainerView()
         
-        highTitleLabel = createLabel(title: "High")
-        lowTitleLabel = createLabel(title: "Low")
-        highValueLabel = createLabel(title: "100")
-        lowValueLabel = createLabel(title: "10")
+        closeTitleLabel = createLabel(title: "Close")
+        openTitleLabel = createLabel(title: "Open")
+        closeValueLabel = createLabel(title: "100")
+        openValueLabel = createLabel(title: "10")
         
-        if let high = stockQuote?.high, let low = stockQuote?.low {
-            lowValueLabel.text = String(format: "$%.02f", low)
-            highValueLabel.text = String(format: "$%.02f", high)
+        if let close = stockQuote?.close, let open = stockQuote?.open {
+            openValueLabel.text = String(format: "$%.02f", open)
+            closeValueLabel.text = String(format: "$%.02f", close)
         }
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBack))
@@ -162,51 +162,51 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
             make.height.width.equalTo(100)
         }
         
-        // Low Values
-        let lowStackView = UIStackView(arrangedSubviews: [lowTitleContainer, lowValueContainer])
-        lowStackView.axis = .vertical
-        lowStackView.distribution = .fillEqually
-        lowStackView.spacing = 10
+        // Open Container Constraint
+        let openStackView = UIStackView(arrangedSubviews: [openTitleContainer, openValueContainer])
+        openStackView.axis = .vertical
+        openStackView.distribution = .fillEqually
+        openStackView.spacing = 10
         
-        lowTitleContainer.addSubview(lowTitleLabel)
-        lowTitleLabel.snp.makeConstraints { (make) in
+        openTitleContainer.addSubview(openTitleLabel)
+        openTitleLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
         
-        lowValueContainer.addSubview(lowValueLabel)
-        lowValueLabel.snp.makeConstraints { (make) in
+        openValueContainer.addSubview(openValueLabel)
+        openValueLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
         
         
-        // High
-        highTitleContainer.addSubview(highTitleLabel)
-        highTitleLabel.snp.makeConstraints { (make) in
+        // Close Container Constraints
+        closeTitleContainer.addSubview(closeTitleLabel)
+        closeTitleLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
         
-        highValueContainer.addSubview(highValueLabel)
-        highValueLabel.snp.makeConstraints { (make) in
+        closeValueContainer.addSubview(closeValueLabel)
+        closeValueLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
         
-        let highStackView = UIStackView(arrangedSubviews: [highTitleContainer, highValueContainer])
+        let highStackView = UIStackView(arrangedSubviews: [closeTitleContainer, closeValueContainer])
         highStackView.axis = .vertical
         highStackView.spacing = 10
         highStackView.distribution = .fillEqually
         
-        lowTitleContainer.addSubview(lowTitleLabel)
-        lowTitleLabel.snp.makeConstraints { (make) in
+        openTitleContainer.addSubview(openTitleLabel)
+        openTitleLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
         
-        lowValueContainer.addSubview(lowValueLabel)
-        lowValueLabel.snp.makeConstraints { (make) in
+        openValueContainer.addSubview(openValueLabel)
+        openValueLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
@@ -215,13 +215,13 @@ class DetailController: UIViewController, UINavigationControllerDelegate {
             make.height.equalTo(25)
         }
         
-        let highLowStackView = UIStackView(arrangedSubviews: [lowStackView, highStackView])
-        highLowStackView.axis = .horizontal
-        highLowStackView.distribution = .fillEqually
-        highLowStackView.spacing = 10
+        let openCloseStackView = UIStackView(arrangedSubviews: [openStackView, highStackView])
+        openCloseStackView.axis = .horizontal
+        openCloseStackView.distribution = .fillEqually
+        openCloseStackView.spacing = 10
         
-        lightBlueBackgroundView.addSubview(highLowStackView)
-        highLowStackView.snp.makeConstraints { (make) in
+        lightBlueBackgroundView.addSubview(openCloseStackView)
+        openCloseStackView.snp.makeConstraints { (make) in
             make.top.equalTo(imageNamePriceStackView.snp.bottom).offset(25)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)

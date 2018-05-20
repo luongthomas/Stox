@@ -137,7 +137,7 @@ class StockCell: UITableViewCell {
         
         companyImageView.snp.makeConstraints { (make) in
             make.height.width.equalTo(40)
-            make.left.equalToSuperview().offset(16)
+            make.left.equalToSuperview().offset(17)
             make.centerY.equalToSuperview()
         }
         
@@ -148,14 +148,13 @@ class StockCell: UITableViewCell {
         
         currentPriceLabel.snp.makeConstraints { (make) in
             make.top.left.bottom.equalToSuperview()
-            make.right.equalTo(priceChangeArrow.snp.left).offset(-16)
+            make.right.equalTo(priceChangeArrow.snp.left).offset(-17)
         }
         
         priceChangeArrow.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-16)
             make.top.bottom.equalToSuperview()
-            make.left.equalTo(currentPriceLabel.snp.right)
-            make.height.width.equalTo(20)
+            make.width.equalTo(20)
         }
     }
 
